@@ -72,7 +72,7 @@ public class WebConfig {
 	mailSender.setHost("smtp.gmail.com");
 	mailSender.setPort(465);
 	mailSender.setUsername("pkumar.c028@gmail.com");
-	mailSender.setPassword("PKumar@123");
+	mailSender.setPassword("PKumar@321");
 	Properties prop = mailSender.getJavaMailProperties();
 	prop.put("mail.smtp.host", "smtp.gmail.com");
 	prop.put("mail.smtp.socketFactory.port", "465");
