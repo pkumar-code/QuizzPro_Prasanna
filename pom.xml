@@ -2,7 +2,11 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
+<<<<<<< HEAD
 	<groupId>com.quizz.bu</groupId>
+=======
+	<groupId>com.quizz.pro</groupId>
+>>>>>>> e71817f9b4782b79c48301feabcacfa326b9c6a4
 	<artifactId>QuizzPro_Project</artifactId>
 	<version>1.0</version>
 	<name>QuizzPro_Project</name>
