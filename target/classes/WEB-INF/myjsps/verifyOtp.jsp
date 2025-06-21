@@ -7,9 +7,9 @@
 <link href="webjars/bootstrap/5.3.3/css/bootstrap.min.css"
 	rel="stylesheet">
 <style>
-div {
+h1 {
 	font-size: 20px;
-	margin:0px;
+	margin: 0px;
 	color: red;
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -18,10 +18,23 @@ h2 {
 	color: blue;
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-button{
-         font-size: 20px;
-         
-    }  
+
+button {
+	font-size: 20px;
+	margin-bottom: 10px;
+	color: red;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-weight: bold;
+}
+
+input {
+	font-size: 20px;
+	font-weight: bold;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	border-radius: 5px;
+	padding-bottom: 5px;
+}
+
 body {
 	margin-top: 30px;
 	margin-left: 250px;
@@ -32,67 +45,67 @@ body {
 }
 
 table, tr, td {
-	text-align: center;
-	color: blue;
-	padding: 20px;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 	font-size: 20px;
 	padding: 20px;
+	font-weight: bold;
+	color: blue;
 }
 </style>
 
 </head>
 <body>
 	<br>
-	<div class="container" align="center"  >
+	<div class="container" align="center">
 		<h2>QuizzPro OTP Verification</h2>
-		<div>
-			Time Remaining for Enter OTP :  <span id="timer"></span>
-		</div>
-
-		<form action="/verifyotp" method="get" >
+		<h1>
+			Time Remaining for Enter OTP : <span id="timer"></span>
+		</h1>
+		<form action="/verifyotp" method="get">
 			<table>
 				<tr>
 					<td>Enter OTP</td>
 					<td><input type="tel" name="otp" placeholder="Enter your otp" /></td>
 				</tr>
 				<tr>
-					<td colspan="3" align="center"><input type="submit" value="Submit Now" />  </td>
+					<td colspan="3" align="center"><input type="submit"
+						value="Submit Now" /></td>
 				</tr>
-			</table>		
+			</table>
 		</form>
 		<div>
-		<h2><a href="myuser?email=${EMAIL }&pass=${PS}"><button>Resend</button></a></h2>
-		</div>	
+
+			<a href="myuser?email=${EMAIL }&pass=${PS}"><button>Resend</button></a>
+		</div>
 	</div>
-	
+
 	<script type="text/javascript">
-	let timerOn = true;
+		let timerOn = true;
 
-	function timer(remaining){
-	    var m = Math.floor(remaining / 60);
-	    var s =remaining % 60;
+		function timer(remaining) {
+			var m = Math.floor(remaining / 60);
+			var s = remaining % 60;
 
-	    m = m <10 ? '0' + m : m;
-	    s = s <10 ? '0' + s : s;
-	    document.getElementById('timer').innerHTML = m + ':' + s;
-	    remaining -= 1;
+			m = m < 10 ? '0' + m : m;
+			s = s < 10 ? '0' + s : s;
+			document.getElementById('timer').innerHTML = m + ':' + s;
+			remaining -= 1;
 
-	    if(remaining >=0 && timerOn){
-	        setTimeout(function() {
-	            timer(remaining);
-	        }, 1000);
-	        return;
-	    }
+			if (remaining >= 0 && timerOn) {
+				setTimeout(function() {
+					timer(remaining);
+				}, 1000);
+				return;
+			}
 
-	     if(!timerOn){
-	         return;
-	      }
-	    alert('Timeout for otp');
-	    
-	}
+			if (!timerOn) {
+				return;
+			}
+			alert('Timeout for otp');
 
-	timer(60);
-	     
+		}
+
+		timer(60);
 	</script>
 </body>
 </html>

@@ -16,45 +16,70 @@ import com.quizz.pro.Entity.User;
 
 @Repository
 @Transactional
-public class UserDAOImpl  implements UserDAO{
-	
+public class UserDAOImpl implements UserDAO {
+
 	@Autowired
 	HibernateTemplate htemp;
-	
+
 	@Override
 	public List<User> verifyUser(String email, String password) {
- 
-		DetachedCriteria dc=DetachedCriteria.forClass(User.class);
-		dc.add(Restrictions.and(Restrictions.eq("email",email),Restrictions.eq("password", password)));
-           List<User> users=  (List<User>) htemp.findByCriteria(dc);
+
+		DetachedCriteria dc = DetachedCriteria.forClass(User.class);
+		dc.add(Restrictions.and(Restrictions.eq("email", email), Restrictions.eq("password", password)));
+		List<User> users = (List<User>) htemp.findByCriteria(dc);
 		return users;
 	}
 
 	@Override
-	public void updateUser(String email,int otp) {
-	
-		SessionFactory factory=htemp.getSessionFactory();
-		Session session=factory.getCurrentSession();
-		 String hqlUpdate = "update User set otp = :otp where email = :email";
-		int updatedEntities = session.createQuery( hqlUpdate )
-		        .setInteger("otp", otp)
-		        .setString( "email", email )
-		        .executeUpdate();
+	public void updateUser(String email, int otp) {
+
+		SessionFactory factory = htemp.getSessionFactory();
+		Session session = factory.getCurrentSession();
+		String hqlUpdate = "update User set otp = :otp where email = :email";
+		int updatedEntities = session.createQuery(hqlUpdate).setInteger("otp", otp).setString("email", email)
+				.executeUpdate();
 	}
 
 	@Override
-	public boolean  verifyOTP(int otp) {
-			
-		boolean b=false;	
-		DetachedCriteria dc=DetachedCriteria.forClass(User.class);
+	public boolean verifyOTP(int otp) {
+
+		boolean b = false;
+		DetachedCriteria dc = DetachedCriteria.forClass(User.class);
 		dc.add(Restrictions.eq("otp", otp));
-           List<User> users=  (List<User>) htemp.findByCriteria(dc);
-           if(!users.isEmpty()) {
-        	   b=true;
-           }else {
-        	   b=false;
-           }
-		return b;		
+		List<User> users = (List<User>) htemp.findByCriteria(dc);
+		if (!users.isEmpty()) {
+			b = true;
+		} else {
+			b = false;
+		}
+		return b;
+	}
+
+	@Override
+	public void forgotPWD(String email, String npassword) {
+
+		SessionFactory factory = htemp.getSessionFactory();
+		Session session = factory.getCurrentSession();
+		String hqlUpdate = "update User set password = :npassword where email = :email";
+		int updatedEntities = session.createQuery(hqlUpdate).setString("npassword", npassword).setString("email", email)
+				.executeUpdate();
+
+	}
+
+	@Override
+	public boolean verifyEmail(String email) {
+
+		boolean b = false;
+		SessionFactory factory = htemp.getSessionFactory();
+		Session session = factory.getCurrentSession();
+		String SQL = "select * from myusers where email=?";
+		List<User> users = session.createNativeQuery(SQL, User.class).setParameter(1, email).getResultList();
+	
+		if (!users.isEmpty()) {
+			b = true;
+		}
+
+		return b;
 	}
 
 }
