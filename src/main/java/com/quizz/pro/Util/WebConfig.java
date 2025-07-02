@@ -15,26 +15,39 @@ import org.springframework.orm.hibernate5.HibernateTemplate;
 import org.springframework.orm.hibernate5.HibernateTransactionManager;
 import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
 import org.springframework.transaction.PlatformTransactionManager;
-import org.springframework.web.servlet.ViewResolver;
-import org.springframework.web.servlet.view.InternalResourceViewResolver;
-import org.springframework.web.servlet.view.JstlView;
+import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+
+import com.google.common.base.Predicates;
+
+import springfox.documentation.builders.PathSelectors;
+import springfox.documentation.builders.RequestHandlerSelectors;
+import springfox.documentation.service.ApiInfo;
+import springfox.documentation.service.Contact;
+import springfox.documentation.spi.DocumentationType;
+import springfox.documentation.spring.web.plugins.Docket;
 
 @SpringBootApplication(exclude = HibernateJpaAutoConfiguration.class)
 @ComponentScan({"com.quizz.pro.*"})
-public class WebConfig {
+public class WebConfig implements WebMvcConfigurer {
+	
+	
+	private ApiInfo getApiDetails() {
+		return new ApiInfo("QuizzPro_Project",
+		 "QuizzPro Project ", "1.0",
+		 "Free to use ",
+		 new Contact("Kumar", "https://www.quizzpro.com", "quizzpro@gmail.com"),
+		 "API Under Free Licence",
+		 "https://www.quizzpro.com");
+		 } 
+
 	
 	@Bean
-	public ViewResolver getView() {
-		
-		InternalResourceViewResolver view=new InternalResourceViewResolver();
-		
-		view.setViewClass(JstlView.class);
-		view.setPrefix("/WEB-INF/myjsps/");
-		view.setSuffix(".jsp");
-		System.out.println("------------------ViewResolver---------------");
-		return view;
-		
-	}
+	public Docket api() {
+	return new Docket(DocumentationType.SWAGGER_2).select().paths(PathSelectors.any())
+	.apis(Predicates.not(RequestHandlerSelectors.basePackage("org.springframework.boot")))
+	.build().apiInfo(getApiDetails());
+	 }
 	
 	@Bean
 	public LocalSessionFactoryBean getSession(DataSource myds) {
@@ -66,21 +79,28 @@ public class WebConfig {
 	}
 	
 	
-	@Bean
-	public JavaMailSender javaMailSenderImpl() {
-	JavaMailSenderImpl mailSender = new JavaMailSenderImpl();
-	mailSender.setHost("smtp.gmail.com");
-	mailSender.setPort(465);
-	mailSender.setUsername("pkumar.c028@gmail.com");
-	mailSender.setPassword("pvqf ggit xvyn gepu");
-	Properties prop = mailSender.getJavaMailProperties();
-	prop.put("mail.smtp.host", "smtp.gmail.com");
-	prop.put("mail.smtp.socketFactory.port", "465");
-	prop.put("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
-	prop.put("mail.smtp.auth", "true");
-	prop.put("mail.smtp.startssl.enable", "true");
-	return mailSender;
-	}
+//	@Bean
+//	public JavaMailSender javaMailSenderImpl() {
+//	JavaMailSenderImpl mailSender = new JavaMailSenderImpl();
+//	mailSender.setHost("smtp.gmail.com");
+//	mailSender.setPort(465);
+//	mailSender.setUsername("pkumar.c028@gmail.com");
+//	mailSender.setPassword("pvqf ggit xvyn gepu");
+//	Properties prop = mailSender.getJavaMailProperties();
+//	prop.put("mail.smtp.host", "smtp.gmail.com");
+//	prop.put("mail.smtp.socketFactory.port", "465");
+//	prop.put("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
+//	prop.put("mail.smtp.auth", "true");
+//	prop.put("mail.smtp.startssl.enable", "true");
+//	return mailSender;
+//	}
+	
+	@Override
+	public void addResourceHandlers(ResourceHandlerRegistry registry) {
+	//enabling swagger-ui
+	registry.addResourceHandler("swagger-ui.html")
+	.addResourceLocations("classpath:/META-INF/resources/");
+	} 
 	
 	
 
