@@ -1,4 +1,4 @@
-package com.quizz.pro.Service;
+package com.quizz.pro.template;
 
 import javax.mail.internet.MimeMessage;
 
@@ -8,15 +8,13 @@ import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Service;
 
 @Service
-public class MailServiceImpl  implements MailService{
-	
+public class EmailTemplate {
+
 	@Autowired
 	JavaMailSender mailSender;
 
-	
-	@Override
 	public void sendMail(String from, String to, String subject, String body) {
-		
+
 		try {
 			MimeMessage mimeMessage = mailSender.createMimeMessage();
 			MimeMessageHelper mailMsg = new MimeMessageHelper(mimeMessage);
@@ -25,12 +23,9 @@ public class MailServiceImpl  implements MailService{
 			mailMsg.setSubject(subject);
 			mailMsg.setText(body, true);
 			mailSender.send(mimeMessage);
-			} catch (Exception ex) {
+		} catch (Exception ex) {
 			ex.printStackTrace();
-			}
-		
+		}
+
 	}
-
-
-
 }
