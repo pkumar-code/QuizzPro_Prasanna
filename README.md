@@ -8,6 +8,18 @@ This Project is whenever a user wants to log in to their QuizzPro account. First
 <p>DataBase Name : quizzdb </p>
 <P>Table name : myusers </P>
 <p>Columns names : user_Id,full_Name,email,phone,password,top,status</p>
+<p>Table Query : 
+create table myusers (
+	
+user_Id int primary key,
+full_Name char(20),
+email char(30),
+phone long,
+password char(20),
+otp int(9),
+status char(15)
+);
+</p>
 
 <h1>Java </h1>
 <p>Verion : 1.8 </p>
