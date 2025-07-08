@@ -13,7 +13,7 @@ body {
 	margin-left: 250px;
 	margin-right: 250px;
 	border: 1px solid;
-	background-color: azure;
+	 background: #1abc9c;
 }
 
 </style>

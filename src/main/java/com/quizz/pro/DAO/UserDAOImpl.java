@@ -9,14 +9,15 @@ import org.hibernate.criterion.Restrictions;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Profile;
 import org.springframework.orm.hibernate5.HibernateTemplate;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.quizz.pro.Controller.UserController;
 import com.quizz.pro.Entity.User;
 
 @Repository
+@Profile("dev")
 @Transactional
 public class UserDAOImpl implements UserDAO {
 

@@ -27,8 +27,9 @@ public class UserController {
 
 	@GetMapping("/")
 	public String IndexPage() {
-		// System.out.println("---------------Login Page----------------------");
-		log.info("-------------UserController --index page------------------ ");
+		log.info("----info---------UserController --index page------------------ ");
+		log.debug("-----debug-----UserController --index page-----------------");
+		log.error("-----error-------UserController---index page----------------");
 
 		return "login";
 	}
@@ -45,8 +46,9 @@ public class UserController {
 
 		List<User> users = userService.verifyUser(email, pass);
 		User user = null;
-		log.info("----UserController--verifyUser---------------------");
-		// System.out.println("---------------Verify User----------------------");
+		log.info("----info---------UserController --verifyUser------------------ ");
+		log.debug("-----debug-----UserController --verifyUser-----------------");
+		log.error("-----error-------UserController---verifyUser----------------");
 		if (!users.isEmpty()) {
 			user = users.get(0);
 			page = "verifyOtp";
@@ -65,7 +67,9 @@ public class UserController {
 
 		String page = "";
 		boolean b = userService.verifyOTP(Integer.parseInt(otp));
-		log.info("------UserController--verifyOtP-------------");
+		log.info("----info---------UserController --verifyOtP------------------ ");
+		log.debug("-----debug-----UserController --verifyOtP-----------------");
+		log.error("-----error-------UserController---verifyOtP----------------");
 		if (b == true) {
 			page = "QuizzHome";
 		} else {
@@ -81,7 +85,9 @@ public class UserController {
 		String page = "";
 		String em = req.getParameter("email");
 		boolean b = userService.verifyEmail(email);
-		log.info("------UserController--- verifyEmail-------------");
+		log.info("----info---------UserController --verifyEmail------------------ ");
+		log.debug("-----debug-----UserController --verifyEmail-----------------");
+		log.error("-----error-------UserController---verifyEmail-----------------");
 		if (b == true) {
 			model.addAttribute("EM", em);
 			page = "PwdOtp";
@@ -100,7 +106,9 @@ public class UserController {
 
 		String em = req.getParameter("email");
 		boolean b = userService.verifyOTP(Integer.parseInt(otp));
-		log.info("------UserController--verifyOtpPWD-------------");
+		log.info("----info---------UserController --verifyOtpPWD------------------ ");
+		log.debug("-----debug-----UserController --verifyOtpPWD-----------------");
+		log.error("-----error-------UserController---verifyOtpPWD-----------------");
 		if (b == true) {
 			page = "forgotpw";
 			model.addAttribute("EM", em);
@@ -114,7 +122,9 @@ public class UserController {
 	@ApiOperation(value = "getForgotPWD", response = String.class, notes = "Gives ")
 	public String forgotPWD(@RequestParam("email") String email, @RequestParam("npass") String npassword) {
 
-		log.info("------UserController---forgotPWD-------------");
+		log.info("----info---------UserController ---forgotPWD------------------ ");
+		log.debug("-----debug-----UserController ---forgotPWD----------------");
+		log.error("-----error-------UserController----forgotPWD----------------");
 		userService.forgotPWD(email, npassword);
 
 		return "login";

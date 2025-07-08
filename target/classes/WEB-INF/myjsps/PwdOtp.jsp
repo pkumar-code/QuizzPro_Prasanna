@@ -4,72 +4,35 @@
 <html>
 <head>
 <title>QuizzPro</title>
-<link href="webjars/bootstrap/5.3.3/css/bootstrap.min.css"
-	rel="stylesheet">
-<style>
-h1 {
-	font-size: 20px;
-	margin: 0px;
-	color: red;
-	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-h2 {
-	color: blue;
-	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-input {
-	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-	font-size: 20px;
-	font-weight: bold;
-	color: blue;
-}
-
-body {
-	margin-top: 30px;
-	margin-left: 250px;
-	margin-right: 250px;
-	margin-bottom: 100px;
-	border: 1px solid;
-	background-color: azure;
-}
-
-table, tr, td {
-	text-align: center;
-	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-	font-weight: bold;
-	font-size: 20px;
-	padding: 20px;
-}
-</style>
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+<link rel="stylesheet" href="style.css" />
 
 </head>
 <body>
-	<br>
-	<div class="container" align="center">
-		<h2>QuizzPro OTP Verification</h2>
-		<h1>
-			Time Remaining for Enter OTP : <span id="timer"></span>
-		</h1>
+<div class="wrapper">
+		<div class="title">
+			<span>QuizzPro OTP Verification</span>
+		</div>
 		<form action="/verifyotpPWD" method="get">
-			<table>
-				<tr>
-					<td><input type="hidden" name="email" value="${EM }" /></td>
-				</tr>
-				<tr>
-					<td>Enter OTP</td>
-					<td><input type="tel" name="otp" placeholder="Enter your otp" /></td>
-				</tr>
-				<tr>
-					<td colspan="3" align="center"><input type="submit"
-						value="Submit Now" /></td>
-				</tr>
-			</table>
+			<div>
+				<p style="color: red;">
+					Time Remaining for Enter OTP : <span id="timer"></span>
+				</p>
+			</div>
+			<div>
+			<input type="hidden" name="email" value="${EM }" />
+			</div>
+			<div class="row">
+				<i class="fa-solid fa-envelope"></i> <input type="tel" name="otp"
+					placeholder="Enter your otp " required />
+			</div>
+
+			<div class="row button">
+				<input type="submit" value="Submit Now" />
+			</div>
 		</form>
-
 	</div>
-
 	<script type="text/javascript">
 		let timerOn = true;
 
