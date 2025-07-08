@@ -4,78 +4,35 @@
 <html>
 <head>
 <title>QuizzPro</title>
-<link href="webjars/bootstrap/5.3.3/css/bootstrap.min.css"
-	rel="stylesheet">
-<style>
-h2 {
-	color: blue;
-	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-button {
-	font-size: 20px;
-	color: blue;
-	border-radius: 5px;
-}
-
-body {
-	margin-top: 30px;
-	margin-left: 250px;
-	margin-right: 250px;
-	margin-bottom: 100px;
-	border: 1px solid;
-	background-color: azure;
-}
-
-input {
-	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-	font-size: 20px;
-	font-weight: bold;
-	border-radius: 5px;
-}
-
-table, tr, td {
-	text-align: center;
-	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-	font-weight: bold;
-	padding: 20px;
-	font-size: 20px;
-	padding: 20px;
-}
-</style>
-
+<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
 </head>
 <body>
-	<br>
-	<div class="container" align="center">
-		<h2>QuizzPro Updating New Password</h2>
-
+<div class="wrapper">
+		<div class="title">
+			<span> New Password Form</span>
+		</div>
 		<form action="/forgotpw" method="get">
-			<table>
-
-				<tr>
-					<td><input type="hidden" name="email" value="${EM }"
-						placeholder="Enter Email" /></td>
-				</tr>
-				<tr>
-					<td>Enter New Password</td>
-					<td><input type="password" name="npass1"
-						placeholder="Enter new password" /></td>
-				</tr>
-				<tr>
-					<td>Re-Enter New Password</td>
-					<td><input type="password" name="npass"
-						placeholder="Re-Enter new password" /></td>
-				</tr>
-				<tr>
-					<td colspan="3" align="center">
-						<button onclick="show1()">Submit</button>
-					</td>
-				</tr>
-			</table>
+		<div>
+		<input type="hidden" name="email" value="${EM }"
+						placeholder="Enter Email" />
+		</div>	
+			<div class="row">
+				<i class="fas fa-lock"></i> <input type="password" name="npass1"
+					placeholder="Enter new password" required />
+			</div>
+			<div class="row">
+				<i class="fas fa-lock"></i> <input type="password" name="npass"
+					placeholder="Re-Enter new password" required />
+			</div>
+			
+			<div class="row button">
+				<input  onclick="show1()"  type="submit" value="Login" />
+			</div>
 		</form>
 	</div>
-
+	
 	<script type="text/javascript">
 	
 	  function show1() {

@@ -26,15 +26,14 @@ public class UserServiceImpl implements UserService {
 	public List<User> verifyUser(String email, String password) {
 		
 		log.info("------UserServiceImpl---verifyUser------------");
-
+		
+		int otp = generateOTP();
+		userDAO.updateUser(email, otp);
+		
 		List<User> user = userDAO.verifyUser(email, password);
 
-		int otp = generateOTP();
-
-		userDAO.updateUser(email, otp);
-
 		String from = "pkumar.c028@gmail.com";
-		String to = "tiletec774@ofacer.com";
+		String to = "1slszqxm83@xkxkud.com";
 		String subject = "Quizz Pro  OTP";
 		String body = "<font color=black size=5>  OTP For  Login - QuizzPro :  </font>" + "<h1>" + otp + "</h1>";
 		Etemp.sendMail(from, to, subject, body);

@@ -1,80 +1,36 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<!DOCTYPE  html>
+<!DOCTYPE html>
 <html>
 <head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
 <title>QuizzPro</title>
-<link href="webjars/bootstrap/5.3.3/css/bootstrap.min.css"
-	rel="stylesheet">
-<style>
-h2 {
-	font-size: 30px;
-	font-weight: bold;
-	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-	border: 1px solid #000;
-	color: aquamarine;
-	padding: 2px 4px;
-	background-color: grey;
-}
-
-a {
-	font-size: 25px;
-	text-decoration: none;
-	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-	font-weight: bold;
-	text-align: center;
-	margin-bottom: 5px;
-}
-
-input {
-	font-size: 20px;
-	font-weight: bold;
-	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-	border-radius: 5px;
-	padding-bottom: 5px;
-}
-
-body {
-	margin-top: 30px;
-	margin-left: 250px;
-	margin-right: 250px;
-	border: 1px solid;
-	background-color: azure;
-}
-
-table, tr, td {
-	text-align: center;
-	padding: 15px;
-	font-weight: bold;
-	font-size: 20px;
-}
-</style>
-
 </head>
 <body>
-	<br>
-	<div class="container" align="center">
-		<h2>QuizzPro User Login</h2>
-
-		<table>
-			<form:form action="/myuser" method="get">
-				<tr>
-					<td>Username</td>
-					<td><input type="text" name="email" placeholder="Enter username..." required /></td>
-				</tr>
-				<tr>
-					<td>Password</td>
-					<td><input type="password" name="pass"  placeholder="Enter password..." required/></td>
-				</tr>
-				<tr>
-					<td colspan="3" align="center"><input style="color:blue;" type="submit"
-						value="LoginNow" /></td>
-				</tr>
-			</form:form>
-		</table>
-
-		<a href="Email.jsp">Forgot</a>
-
+	<div class="wrapper">
+		<div class="title">
+			<span>Login Form</span>
+		</div>
+		<form action="/myuser" method="get">
+			<div class="row">
+				<i class="fas fa-user"></i> <input type="text" name="email"
+					placeholder="Email " required />
+			</div>
+			<div class="row">
+				<i class="fas fa-lock"></i> <input type="password" name="pass"
+					placeholder="Password" required />
+			</div>
+			<div class="pass">
+				<a href="Email.jsp">Forgot password?</a>
+			</div>
+			<div class="row button">
+				<input type="submit" value="Login" />
+			</div>
+		</form>
 	</div>
+
 </body>
 </html>

@@ -78,28 +78,12 @@ public class WebConfig implements WebMvcConfigurer {
 		return new HibernateTransactionManager(sf);
 	}
 	
-	
-//	@Bean
-//	public JavaMailSender javaMailSenderImpl() {
-//	JavaMailSenderImpl mailSender = new JavaMailSenderImpl();
-//	mailSender.setHost("smtp.gmail.com");
-//	mailSender.setPort(465);
-//	mailSender.setUsername("pkumar.c028@gmail.com");
-//	mailSender.setPassword("pvqf ggit xvyn gepu");
-//	Properties prop = mailSender.getJavaMailProperties();
-//	prop.put("mail.smtp.host", "smtp.gmail.com");
-//	prop.put("mail.smtp.socketFactory.port", "465");
-//	prop.put("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
-//	prop.put("mail.smtp.auth", "true");
-//	prop.put("mail.smtp.startssl.enable", "true");
-//	return mailSender;
-//	}
-	
 	@Override
 	public void addResourceHandlers(ResourceHandlerRegistry registry) {
 	//enabling swagger-ui
 	registry.addResourceHandler("swagger-ui.html")
 	.addResourceLocations("classpath:/META-INF/resources/");
+	registry.addResourceHandler("style.css").addResourceLocations("classpath:/META-INF/mycss/");
 	} 
 	
 	

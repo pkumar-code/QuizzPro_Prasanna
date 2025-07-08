@@ -13,19 +13,20 @@ spring:
   application:
     name: QuizzPro_Prasanna
   datasource:
-    password: kumar123
-    driver-class-name: com.mysql.jdbc.Driver
     hikari:
       idle-timeout: '2000000'
       maximum-pool-size: '10'
-    username: root
-    url: jdbc:mysql://localhost:3306/quizzdb
   mvc:
     view:
       prefix: /WEB-INF/myjsps/
       suffix: .jsp
+    pathmatch:
+      matching-strategy: ANT_PATH_MATCHER
   banner:
     location: classpath:banner.txt
+  profiles:
+    active:
+    - "dev"
 logging:
   pattern:
     console: '%-5level %logger{36} -%m%n'
@@ -33,3 +34,5 @@ logging:
     root: 'info          '
 server:
   port: '12345'
+
+
