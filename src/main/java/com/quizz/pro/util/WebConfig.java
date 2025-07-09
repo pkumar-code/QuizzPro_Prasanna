@@ -1,4 +1,4 @@
-package com.quizz.pro.Util;
+package com.quizz.pro.util;
 
 import java.util.Properties;
 

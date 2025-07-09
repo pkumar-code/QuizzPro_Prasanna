@@ -1,8 +1,8 @@
-package com.quizz.pro.DAO;
+package com.quizz.pro.dao;
 
 import java.util.List;
 
-import com.quizz.pro.Entity.User;
+import com.quizz.pro.entity.User;
 
 public interface UserDAO {
 
