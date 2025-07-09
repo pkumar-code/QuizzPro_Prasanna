@@ -71,7 +71,7 @@ public class UserController {
 		log.debug("-----debug-----UserController --verifyOtP-----------------");
 		log.error("-----error-------UserController---verifyOtP----------------");
 		if (b == true) {
-			page = "QuizzHome";
+			page = "teacherHome";
 		} else {
 			page = "verifyOtp";
 		}
