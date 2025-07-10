@@ -1,4 +1,4 @@
-package com.quizz.pro.Util;
+package com.quizz.pro.util;
 
 import java.util.Properties;
 
@@ -83,7 +83,8 @@ public class WebConfig implements WebMvcConfigurer {
 	//enabling swagger-ui
 	registry.addResourceHandler("swagger-ui.html")
 	.addResourceLocations("classpath:/META-INF/resources/");
-	registry.addResourceHandler("style.css").addResourceLocations("classpath:/META-INF/mycss/");
+	registry.addResourceHandler("*.css").addResourceLocations("classpath:/META-INF/mycss/");
+	
 	} 
 	
 	

@@ -6,7 +6,7 @@
             <pattern>%d{HH:mm:ss.SSS} %-5level %logger{36} - %msg%n</pattern>
         </encoder>
     </appender>
- 
+  
     <appender name="file" class="ch.qos.logback.core.FileAppender">
         <file>./logs/logback.log</file>
         <append>true</append>
@@ -15,16 +15,17 @@
             <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
         </encoder>
     </appender>
-
-    <logger name="com.quizz.pro" level="info">
+<!-- 
+    <logger name="com.quizz.pro" level="info"  additivity="false">
         <appender-ref ref="console"/>
     </logger>
-    
-      <root level="info">
+-->
+      <root name="com.quizz.pro"  level="info" additivity="false">
         <appender-ref ref="console" />
        </root>
-
-    <root level="info">
+      
+    <root name="com.quizz.pro"  level="info" additivity="false">
         <appender-ref ref="file" />
     </root>
+
 </configuration>
