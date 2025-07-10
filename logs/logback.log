@@ -3900,3 +3900,537 @@ Caused by: org.hibernate.HibernateException: Access to DialectResolutionInfo can
 08:50:35.124 [RMI TCP Connection(4)-127.0.0.1] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-12345"]
 08:50:35.130 [RMI TCP Connection(4)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 08:50:35.136 [RMI TCP Connection(4)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+16:52:18.541 [main] INFO  com.quizz.pro.MyBootApplication - ---info---MyBootApplication -----begin---------
+16:52:18.547 [main] ERROR com.quizz.pro.MyBootApplication - ---error----MyBootApplication -----begin---------
+16:52:18.918 [restartedMain] INFO  com.quizz.pro.MyBootApplication - ---info---MyBootApplication -----begin---------
+16:52:18.919 [restartedMain] ERROR com.quizz.pro.MyBootApplication - ---error----MyBootApplication -----begin---------
+16:52:19.944 [restartedMain] INFO  com.quizz.pro.MyBootApplication - Starting MyBootApplication using Java 17.0.12 on DESKTOP-NK37HDR with PID 568 (E:\FinalProject\Quizz_Project\QuizzPro_Prasanna\target\classes started by user in E:\FinalProject\Quizz_Project\QuizzPro_Prasanna)
+16:52:19.946 [restartedMain] INFO  com.quizz.pro.MyBootApplication - The following 1 profile is active: "dev"
+16:52:20.102 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+16:52:20.103 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+16:52:22.341 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+16:52:22.381 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15 ms. Found 0 JPA repository interfaces.
+16:52:24.456 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 12345 (http)
+16:52:24.488 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-12345"]
+16:52:24.493 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16:52:24.494 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.83]
+16:52:25.071 [restartedMain] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+16:52:25.102 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16:52:25.102 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4998 ms
+16:52:25.557 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+16:52:26.016 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+16:52:26.325 [restartedMain] WARN  com.zaxxer.hikari.HikariConfig - HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+16:52:26.328 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+16:52:26.339 [restartedMain] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+16:52:26.774 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+16:52:26.853 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+16:52:28.330 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+16:52:29.544 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+16:52:29.873 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-12345"]
+16:52:30.052 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 12345 (http) with context path ''
+16:52:30.072 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+16:52:30.106 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+16:52:30.141 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+16:52:30.352 [restartedMain] INFO  com.quizz.pro.MyBootApplication - Started MyBootApplication in 11.408 seconds (JVM running for 13.593)
+16:52:30.364 [restartedMain] INFO  com.quizz.pro.MyBootApplication - ---info----MyBootApplication -----End---------
+16:52:30.365 [restartedMain] ERROR com.quizz.pro.MyBootApplication - ---error---MyBootApplication -----End---------
+16:52:43.437 [http-nio-12345-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:52:43.437 [http-nio-12345-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+16:52:43.441 [http-nio-12345-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+16:52:43.508 [http-nio-12345-exec-1] INFO  c.q.pro.controller.UserController - ----info---------UserController --index page------------------ 
+16:52:43.508 [http-nio-12345-exec-1] ERROR c.q.pro.controller.UserController - -----error-------UserController---index page----------------
+16:54:11.978 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+16:54:12.016 [Thread-5] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-12345"]
+16:54:12.018 [Thread-5] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+16:54:12.026 [Thread-5] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+16:54:12.086 [Thread-5] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-12345"]
+16:54:12.111 [Thread-5] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-12345"]
+16:54:12.148 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+16:54:12.216 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+16:54:12.404 [restartedMain] INFO  com.quizz.pro.MyBootApplication - ---info---MyBootApplication -----begin---------
+16:54:12.404 [restartedMain] ERROR com.quizz.pro.MyBootApplication - ---error----MyBootApplication -----begin---------
+16:54:12.509 [restartedMain] INFO  com.quizz.pro.MyBootApplication - Starting MyBootApplication using Java 17.0.12 on DESKTOP-NK37HDR with PID 568 (E:\FinalProject\Quizz_Project\QuizzPro_Prasanna\target\classes started by user in E:\FinalProject\Quizz_Project\QuizzPro_Prasanna)
+16:54:12.510 [restartedMain] INFO  com.quizz.pro.MyBootApplication - The following 1 profile is active: "dev"
+16:54:13.121 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+16:54:13.127 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
+16:54:13.322 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 12345 (http)
+16:54:13.324 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-12345"]
+16:54:13.325 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16:54:13.325 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.83]
+16:54:13.509 [restartedMain] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+16:54:13.518 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16:54:13.519 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1002 ms
+16:54:13.634 [restartedMain] WARN  com.zaxxer.hikari.HikariConfig - HikariPool-2 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+16:54:13.635 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+16:54:13.635 [restartedMain] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+16:54:13.650 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+16:54:13.651 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+16:54:13.778 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+16:54:14.110 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+16:54:14.222 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-12345"]
+16:54:14.234 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 12345 (http) with context path ''
+16:54:14.245 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+16:54:14.247 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+16:54:14.251 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+16:54:14.303 [restartedMain] INFO  com.quizz.pro.MyBootApplication - Started MyBootApplication in 1.89 seconds (JVM running for 117.544)
+16:54:14.314 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+16:54:14.315 [restartedMain] INFO  com.quizz.pro.MyBootApplication - ---info----MyBootApplication -----End---------
+16:54:14.316 [restartedMain] ERROR com.quizz.pro.MyBootApplication - ---error---MyBootApplication -----End---------
+16:54:17.688 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+16:54:17.720 [Thread-8] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-12345"]
+16:54:17.721 [Thread-8] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+16:54:17.741 [Thread-8] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-12345"]
+16:54:17.751 [Thread-8] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-12345"]
+16:54:17.775 [Thread-8] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+16:54:17.793 [Thread-8] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+16:54:17.927 [restartedMain] INFO  com.quizz.pro.MyBootApplication - ---info---MyBootApplication -----begin---------
+16:54:17.927 [restartedMain] ERROR com.quizz.pro.MyBootApplication - ---error----MyBootApplication -----begin---------
+16:54:18.050 [restartedMain] INFO  com.quizz.pro.MyBootApplication - Starting MyBootApplication using Java 17.0.12 on DESKTOP-NK37HDR with PID 568 (E:\FinalProject\Quizz_Project\QuizzPro_Prasanna\target\classes started by user in E:\FinalProject\Quizz_Project\QuizzPro_Prasanna)
+16:54:18.050 [restartedMain] INFO  com.quizz.pro.MyBootApplication - The following 1 profile is active: "dev"
+16:54:19.232 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+16:54:19.239 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 JPA repository interfaces.
+16:54:19.466 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 12345 (http)
+16:54:19.468 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-12345"]
+16:54:19.470 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16:54:19.471 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.83]
+16:54:19.653 [restartedMain] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+16:54:19.663 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16:54:19.663 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1605 ms
+16:54:19.759 [restartedMain] WARN  com.zaxxer.hikari.HikariConfig - HikariPool-3 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+16:54:19.760 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+16:54:19.760 [restartedMain] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+16:54:19.767 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+16:54:19.767 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+16:54:19.943 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+16:54:20.263 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+16:54:20.363 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-12345"]
+16:54:20.379 [http-nio-12345-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:54:20.379 [http-nio-12345-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+16:54:20.379 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 12345 (http) with context path ''
+16:54:20.381 [http-nio-12345-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+16:54:20.383 [http-nio-12345-exec-1] INFO  c.q.pro.controller.UserController - ----info---------UserController --index page------------------ 
+16:54:20.383 [http-nio-12345-exec-1] ERROR c.q.pro.controller.UserController - -----error-------UserController---index page----------------
+16:54:20.396 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+16:54:20.398 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+16:54:20.400 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+16:54:20.464 [restartedMain] INFO  com.quizz.pro.MyBootApplication - Started MyBootApplication in 2.527 seconds (JVM running for 123.704)
+16:54:20.467 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+16:54:20.469 [restartedMain] INFO  com.quizz.pro.MyBootApplication - ---info----MyBootApplication -----End---------
+16:54:20.470 [restartedMain] ERROR com.quizz.pro.MyBootApplication - ---error---MyBootApplication -----End---------
+16:54:36.903 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+16:54:36.929 [Thread-13] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-12345"]
+16:54:36.929 [Thread-13] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+16:54:36.930 [Thread-13] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+16:54:36.938 [Thread-13] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-12345"]
+16:54:36.968 [Thread-13] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-12345"]
+16:54:36.972 [Thread-13] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+16:54:36.983 [Thread-13] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+16:54:37.059 [restartedMain] INFO  com.quizz.pro.MyBootApplication - ---info---MyBootApplication -----begin---------
+16:54:37.059 [restartedMain] ERROR com.quizz.pro.MyBootApplication - ---error----MyBootApplication -----begin---------
+16:54:37.127 [restartedMain] INFO  com.quizz.pro.MyBootApplication - Starting MyBootApplication using Java 17.0.12 on DESKTOP-NK37HDR with PID 568 (E:\FinalProject\Quizz_Project\QuizzPro_Prasanna\target\classes started by user in E:\FinalProject\Quizz_Project\QuizzPro_Prasanna)
+16:54:37.129 [restartedMain] INFO  com.quizz.pro.MyBootApplication - The following 1 profile is active: "dev"
+16:54:37.594 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+16:54:37.601 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 JPA repository interfaces.
+16:54:37.759 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 12345 (http)
+16:54:37.760 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-12345"]
+16:54:37.761 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16:54:37.762 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.83]
+16:54:37.920 [restartedMain] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+16:54:37.928 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16:54:37.929 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 795 ms
+16:54:38.019 [restartedMain] WARN  com.zaxxer.hikari.HikariConfig - HikariPool-4 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+16:54:38.020 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
+16:54:38.021 [restartedMain] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+16:54:38.027 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
+16:54:38.028 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+16:54:38.116 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+16:54:38.365 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+16:54:38.461 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-12345"]
+16:54:38.476 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 12345 (http) with context path ''
+16:54:38.486 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+16:54:38.488 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+16:54:38.492 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+16:54:38.538 [restartedMain] INFO  com.quizz.pro.MyBootApplication - Started MyBootApplication in 1.469 seconds (JVM running for 141.78)
+16:54:38.543 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+16:54:38.545 [restartedMain] INFO  com.quizz.pro.MyBootApplication - ---info----MyBootApplication -----End---------
+16:54:38.545 [restartedMain] ERROR com.quizz.pro.MyBootApplication - ---error---MyBootApplication -----End---------
+16:55:14.343 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+16:55:14.389 [Thread-18] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-12345"]
+16:55:14.390 [Thread-18] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+16:55:14.399 [Thread-18] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-12345"]
+16:55:14.403 [Thread-18] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-12345"]
+16:55:14.410 [Thread-18] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown initiated...
+16:55:14.419 [Thread-18] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown completed.
+16:55:14.544 [restartedMain] INFO  com.quizz.pro.MyBootApplication - ---info---MyBootApplication -----begin---------
+16:55:14.545 [restartedMain] ERROR com.quizz.pro.MyBootApplication - ---error----MyBootApplication -----begin---------
+16:55:14.677 [restartedMain] INFO  com.quizz.pro.MyBootApplication - Starting MyBootApplication using Java 17.0.12 on DESKTOP-NK37HDR with PID 568 (E:\FinalProject\Quizz_Project\QuizzPro_Prasanna\target\classes started by user in E:\FinalProject\Quizz_Project\QuizzPro_Prasanna)
+16:55:14.678 [restartedMain] INFO  com.quizz.pro.MyBootApplication - The following 1 profile is active: "dev"
+16:55:15.659 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+16:55:15.665 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
+16:55:15.984 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 12345 (http)
+16:55:15.994 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-12345"]
+16:55:15.995 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16:55:15.995 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.83]
+16:55:16.512 [restartedMain] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+16:55:16.518 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16:55:16.518 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1832 ms
+16:55:16.597 [restartedMain] WARN  com.zaxxer.hikari.HikariConfig - HikariPool-5 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+16:55:16.597 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Starting...
+16:55:16.597 [restartedMain] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+16:55:16.605 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Start completed.
+16:55:16.605 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+16:55:16.695 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+16:55:17.028 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+16:55:17.178 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-12345"]
+16:55:17.196 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 12345 (http) with context path ''
+16:55:17.213 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+16:55:17.214 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+16:55:17.218 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+16:55:17.277 [restartedMain] INFO  com.quizz.pro.MyBootApplication - Started MyBootApplication in 2.72 seconds (JVM running for 180.518)
+16:55:17.281 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+16:55:17.282 [restartedMain] INFO  com.quizz.pro.MyBootApplication - ---info----MyBootApplication -----End---------
+16:55:17.283 [restartedMain] ERROR com.quizz.pro.MyBootApplication - ---error---MyBootApplication -----End---------
+16:55:26.919 [http-nio-12345-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:55:26.919 [http-nio-12345-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+16:55:26.932 [http-nio-12345-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 12 ms
+16:55:26.940 [http-nio-12345-exec-1] INFO  c.q.pro.controller.UserController - ----info---------UserController --index page------------------ 
+16:55:26.947 [http-nio-12345-exec-1] ERROR c.q.pro.controller.UserController - -----error-------UserController---index page----------------
+16:55:51.973 [RMI TCP Connection(7)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+16:55:52.000 [RMI TCP Connection(7)-127.0.0.1] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-12345"]
+16:55:52.002 [RMI TCP Connection(7)-127.0.0.1] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+16:55:52.003 [RMI TCP Connection(7)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+16:55:52.011 [RMI TCP Connection(7)-127.0.0.1] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-12345"]
+16:55:52.014 [RMI TCP Connection(7)-127.0.0.1] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-12345"]
+16:55:52.019 [RMI TCP Connection(7)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown initiated...
+16:55:52.026 [RMI TCP Connection(7)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown completed.
+16:56:18.473 [main] INFO  com.quizz.pro.MyBootApplication - ---info---MyBootApplication -----begin---------
+16:56:18.481 [main] ERROR com.quizz.pro.MyBootApplication - ---error----MyBootApplication -----begin---------
+16:56:18.792 [restartedMain] INFO  com.quizz.pro.MyBootApplication - ---info---MyBootApplication -----begin---------
+16:56:18.793 [restartedMain] ERROR com.quizz.pro.MyBootApplication - ---error----MyBootApplication -----begin---------
+16:56:19.581 [restartedMain] INFO  com.quizz.pro.MyBootApplication - Starting MyBootApplication using Java 17.0.12 on DESKTOP-NK37HDR with PID 6888 (E:\FinalProject\Quizz_Project\QuizzPro_Prasanna\target\classes started by user in E:\FinalProject\Quizz_Project\QuizzPro_Prasanna)
+16:56:19.583 [restartedMain] INFO  com.quizz.pro.MyBootApplication - The following 1 profile is active: "dev"
+16:56:19.693 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+16:56:19.694 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+16:56:21.269 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+16:56:21.305 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15 ms. Found 0 JPA repository interfaces.
+16:56:22.525 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 12345 (http)
+16:56:22.540 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-12345"]
+16:56:22.546 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16:56:22.547 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.83]
+16:56:22.971 [restartedMain] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+16:56:22.991 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16:56:22.991 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3296 ms
+16:56:23.404 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+16:56:23.774 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+16:56:24.029 [restartedMain] WARN  com.zaxxer.hikari.HikariConfig - HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+16:56:24.032 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+16:56:24.044 [restartedMain] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+16:56:24.346 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+16:56:24.414 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+16:56:25.738 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+16:56:27.038 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+16:56:27.358 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-12345"]
+16:56:27.506 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 12345 (http) with context path ''
+16:56:27.525 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+16:56:27.562 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+16:56:27.580 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+16:56:27.789 [restartedMain] INFO  com.quizz.pro.MyBootApplication - Started MyBootApplication in 8.979 seconds (JVM running for 10.836)
+16:56:27.800 [restartedMain] INFO  com.quizz.pro.MyBootApplication - ---info----MyBootApplication -----End---------
+16:56:27.801 [restartedMain] ERROR com.quizz.pro.MyBootApplication - ---error---MyBootApplication -----End---------
+16:56:35.718 [http-nio-12345-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:56:35.719 [http-nio-12345-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+16:56:35.723 [http-nio-12345-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+16:56:35.786 [http-nio-12345-exec-1] INFO  c.q.pro.controller.UserController - ----info---------UserController --index page------------------ 
+16:56:35.786 [http-nio-12345-exec-1] ERROR c.q.pro.controller.UserController - -----error-------UserController---index page----------------
+16:56:52.324 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+16:56:52.353 [Thread-5] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-12345"]
+16:56:52.353 [Thread-5] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+16:56:52.356 [Thread-5] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+16:56:52.368 [Thread-5] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-12345"]
+16:56:52.374 [Thread-5] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-12345"]
+16:56:52.403 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+16:56:52.431 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+16:56:52.566 [restartedMain] INFO  com.quizz.pro.MyBootApplication - ---info---MyBootApplication -----begin---------
+16:56:52.568 [restartedMain] ERROR com.quizz.pro.MyBootApplication - ---error----MyBootApplication -----begin---------
+16:56:52.800 [restartedMain] INFO  com.quizz.pro.MyBootApplication - Starting MyBootApplication using Java 17.0.12 on DESKTOP-NK37HDR with PID 6888 (E:\FinalProject\Quizz_Project\QuizzPro_Prasanna\target\classes started by user in E:\FinalProject\Quizz_Project\QuizzPro_Prasanna)
+16:56:52.801 [restartedMain] INFO  com.quizz.pro.MyBootApplication - The following 1 profile is active: "dev"
+17:03:37.132 [main] INFO  com.quizz.pro.MyBootApplication - ---info---MyBootApplication -----begin---------
+17:03:37.161 [main] ERROR com.quizz.pro.MyBootApplication - ---error----MyBootApplication -----begin---------
+17:03:37.479 [restartedMain] INFO  com.quizz.pro.MyBootApplication - ---info---MyBootApplication -----begin---------
+17:03:37.480 [restartedMain] ERROR com.quizz.pro.MyBootApplication - ---error----MyBootApplication -----begin---------
+17:03:38.260 [restartedMain] INFO  com.quizz.pro.MyBootApplication - Starting MyBootApplication using Java 17.0.12 on DESKTOP-NK37HDR with PID 12996 (E:\FinalProject\Quizz_Project\QuizzPro_Prasanna\target\classes started by user in E:\FinalProject\Quizz_Project\QuizzPro_Prasanna)
+17:03:38.264 [restartedMain] INFO  com.quizz.pro.MyBootApplication - The following 1 profile is active: "dev"
+17:03:38.384 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+17:03:38.385 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+17:03:39.953 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+17:03:39.984 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 JPA repository interfaces.
+17:03:42.258 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 12345 (http)
+17:03:42.296 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-12345"]
+17:03:42.302 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+17:03:42.303 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.83]
+17:03:42.802 [restartedMain] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+17:03:42.832 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+17:03:42.832 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4446 ms
+17:03:43.275 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+17:03:43.711 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+17:03:44.011 [restartedMain] WARN  com.zaxxer.hikari.HikariConfig - HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+17:03:44.013 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+17:03:44.024 [restartedMain] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+17:03:44.497 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+17:03:44.559 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+17:03:45.882 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+17:03:47.110 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+17:03:47.407 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-12345"]
+17:03:47.570 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 12345 (http) with context path ''
+17:03:47.586 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+17:03:47.619 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+17:03:47.636 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+17:03:47.844 [restartedMain] INFO  com.quizz.pro.MyBootApplication - Started MyBootApplication in 10.348 seconds (JVM running for 12.013)
+17:03:47.852 [restartedMain] INFO  com.quizz.pro.MyBootApplication - ---info----MyBootApplication -----End---------
+17:03:47.853 [restartedMain] ERROR com.quizz.pro.MyBootApplication - ---error---MyBootApplication -----End---------
+17:03:57.534 [http-nio-12345-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+17:03:57.535 [http-nio-12345-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+17:03:57.541 [http-nio-12345-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+17:03:57.589 [http-nio-12345-exec-1] INFO  c.q.pro.controller.UserController - ----info---------UserController --index page------------------ 
+17:03:57.589 [http-nio-12345-exec-1] ERROR c.q.pro.controller.UserController - -----error-------UserController---index page----------------
+17:04:25.912 [RMI TCP Connection(4)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+17:04:25.943 [RMI TCP Connection(4)-127.0.0.1] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-12345"]
+17:04:25.943 [RMI TCP Connection(4)-127.0.0.1] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+17:04:25.946 [RMI TCP Connection(4)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+17:04:25.968 [RMI TCP Connection(4)-127.0.0.1] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-12345"]
+17:04:25.982 [RMI TCP Connection(4)-127.0.0.1] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-12345"]
+17:04:26.002 [RMI TCP Connection(4)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+17:04:26.068 [RMI TCP Connection(4)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+17:05:44.415 [main] INFO  com.quizz.pro.MyBootApplication - ---info---MyBootApplication -----begin---------
+17:05:44.421 [main] ERROR com.quizz.pro.MyBootApplication - ---error----MyBootApplication -----begin---------
+17:05:44.943 [restartedMain] INFO  com.quizz.pro.MyBootApplication - ---info---MyBootApplication -----begin---------
+17:05:44.944 [restartedMain] ERROR com.quizz.pro.MyBootApplication - ---error----MyBootApplication -----begin---------
+17:05:45.747 [restartedMain] INFO  com.quizz.pro.MyBootApplication - Starting MyBootApplication using Java 17.0.12 on DESKTOP-NK37HDR with PID 14656 (E:\FinalProject\Quizz_Project\QuizzPro_Prasanna\target\classes started by user in E:\FinalProject\Quizz_Project\QuizzPro_Prasanna)
+17:05:45.749 [restartedMain] INFO  com.quizz.pro.MyBootApplication - The following 1 profile is active: "dev"
+17:05:45.871 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+17:05:45.871 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+17:05:47.390 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+17:05:47.423 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 JPA repository interfaces.
+17:05:48.620 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 12345 (http)
+17:05:48.635 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-12345"]
+17:05:48.640 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+17:05:48.641 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.83]
+17:05:49.078 [restartedMain] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+17:05:49.095 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+17:05:49.096 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3224 ms
+17:05:49.482 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+17:05:49.841 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+17:05:50.081 [restartedMain] WARN  com.zaxxer.hikari.HikariConfig - HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+17:05:50.084 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+17:05:50.094 [restartedMain] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+17:05:50.372 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+17:05:50.427 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+17:05:51.557 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+17:05:52.470 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+17:05:52.932 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-12345"]
+17:05:53.119 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 12345 (http) with context path ''
+17:05:53.183 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+17:05:53.301 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+17:05:53.329 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+17:05:53.636 [restartedMain] INFO  com.quizz.pro.MyBootApplication - Started MyBootApplication in 8.675 seconds (JVM running for 10.56)
+17:05:53.657 [restartedMain] INFO  com.quizz.pro.MyBootApplication - ---info----MyBootApplication -----End---------
+17:05:53.659 [restartedMain] ERROR com.quizz.pro.MyBootApplication - ---error---MyBootApplication -----End---------
+17:05:57.587 [http-nio-12345-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+17:05:57.588 [http-nio-12345-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+17:05:57.591 [http-nio-12345-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+17:05:57.648 [http-nio-12345-exec-1] INFO  c.q.pro.controller.UserController - ----info---------UserController --index page------------------ 
+17:05:57.648 [http-nio-12345-exec-1] ERROR c.q.pro.controller.UserController - -----error-------UserController---index page----------------
+17:06:34.245 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+17:06:34.377 [Thread-5] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-12345"]
+17:06:34.378 [Thread-5] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+17:06:34.381 [Thread-5] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+17:06:34.390 [Thread-5] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-12345"]
+17:06:34.397 [Thread-5] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-12345"]
+17:06:34.424 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+17:06:34.462 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+17:06:34.655 [restartedMain] INFO  com.quizz.pro.MyBootApplication - ---info---MyBootApplication -----begin---------
+17:06:34.655 [restartedMain] ERROR com.quizz.pro.MyBootApplication - ---error----MyBootApplication -----begin---------
+17:06:34.764 [restartedMain] INFO  com.quizz.pro.MyBootApplication - Starting MyBootApplication using Java 17.0.12 on DESKTOP-NK37HDR with PID 14656 (E:\FinalProject\Quizz_Project\QuizzPro_Prasanna\target\classes started by user in E:\FinalProject\Quizz_Project\QuizzPro_Prasanna)
+17:06:34.764 [restartedMain] INFO  com.quizz.pro.MyBootApplication - The following 1 profile is active: "dev"
+17:06:35.714 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+17:06:35.720 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
+17:06:35.952 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 12345 (http)
+17:06:35.954 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-12345"]
+17:06:35.955 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+17:06:35.956 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.83]
+17:06:36.166 [restartedMain] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+17:06:36.175 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+17:06:36.176 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1402 ms
+17:06:36.420 [restartedMain] WARN  com.zaxxer.hikari.HikariConfig - HikariPool-2 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+17:06:36.421 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+17:06:36.421 [restartedMain] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+17:06:36.439 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+17:06:36.441 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+17:06:36.630 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+17:06:36.977 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+17:06:37.202 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-12345"]
+17:06:37.213 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 12345 (http) with context path ''
+17:06:37.226 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+17:06:37.229 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+17:06:37.233 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+17:06:37.306 [restartedMain] INFO  com.quizz.pro.MyBootApplication - Started MyBootApplication in 2.637 seconds (JVM running for 54.23)
+17:06:37.318 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+17:06:37.319 [restartedMain] INFO  com.quizz.pro.MyBootApplication - ---info----MyBootApplication -----End---------
+17:06:37.320 [restartedMain] ERROR com.quizz.pro.MyBootApplication - ---error---MyBootApplication -----End---------
+17:06:42.676 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+17:06:42.717 [Thread-8] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-12345"]
+17:06:42.718 [Thread-8] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+17:06:42.726 [Thread-8] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-12345"]
+17:06:42.732 [Thread-8] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-12345"]
+17:06:42.740 [Thread-8] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+17:06:42.749 [Thread-8] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+17:06:42.875 [restartedMain] INFO  com.quizz.pro.MyBootApplication - ---info---MyBootApplication -----begin---------
+17:06:42.875 [restartedMain] ERROR com.quizz.pro.MyBootApplication - ---error----MyBootApplication -----begin---------
+17:06:43.031 [restartedMain] INFO  com.quizz.pro.MyBootApplication - Starting MyBootApplication using Java 17.0.12 on DESKTOP-NK37HDR with PID 14656 (E:\FinalProject\Quizz_Project\QuizzPro_Prasanna\target\classes started by user in E:\FinalProject\Quizz_Project\QuizzPro_Prasanna)
+17:06:43.033 [restartedMain] INFO  com.quizz.pro.MyBootApplication - The following 1 profile is active: "dev"
+17:06:43.613 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+17:06:43.621 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
+17:06:43.820 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 12345 (http)
+17:06:43.821 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-12345"]
+17:06:43.822 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+17:06:43.823 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.83]
+17:06:44.007 [restartedMain] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+17:06:44.015 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+17:06:44.016 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 976 ms
+17:06:44.108 [restartedMain] WARN  com.zaxxer.hikari.HikariConfig - HikariPool-3 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+17:06:44.108 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+17:06:44.109 [restartedMain] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+17:06:44.118 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+17:06:44.119 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+17:06:44.241 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+17:06:45.109 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+17:06:45.256 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-12345"]
+17:06:45.268 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 12345 (http) with context path ''
+17:06:45.286 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+17:06:45.287 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+17:06:45.291 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+17:06:45.351 [restartedMain] INFO  com.quizz.pro.MyBootApplication - Started MyBootApplication in 2.463 seconds (JVM running for 62.275)
+17:06:45.357 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+17:06:45.359 [restartedMain] INFO  com.quizz.pro.MyBootApplication - ---info----MyBootApplication -----End---------
+17:06:45.359 [restartedMain] ERROR com.quizz.pro.MyBootApplication - ---error---MyBootApplication -----End---------
+17:07:06.216 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+17:07:06.281 [Thread-13] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-12345"]
+17:07:06.281 [Thread-13] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+17:07:06.288 [Thread-13] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-12345"]
+17:07:06.293 [Thread-13] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-12345"]
+17:07:06.301 [Thread-13] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+17:07:06.309 [Thread-13] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+17:07:06.408 [restartedMain] INFO  com.quizz.pro.MyBootApplication - ---info---MyBootApplication -----begin---------
+17:07:06.409 [restartedMain] ERROR com.quizz.pro.MyBootApplication - ---error----MyBootApplication -----begin---------
+17:07:06.496 [restartedMain] INFO  com.quizz.pro.MyBootApplication - Starting MyBootApplication using Java 17.0.12 on DESKTOP-NK37HDR with PID 14656 (E:\FinalProject\Quizz_Project\QuizzPro_Prasanna\target\classes started by user in E:\FinalProject\Quizz_Project\QuizzPro_Prasanna)
+17:07:06.498 [restartedMain] INFO  com.quizz.pro.MyBootApplication - The following 1 profile is active: "dev"
+17:07:07.033 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+17:07:07.040 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 JPA repository interfaces.
+17:07:07.237 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 12345 (http)
+17:07:07.239 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-12345"]
+17:07:07.240 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+17:07:07.240 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.83]
+17:07:07.401 [restartedMain] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+17:07:07.407 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+17:07:07.408 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 905 ms
+17:07:07.496 [restartedMain] WARN  com.zaxxer.hikari.HikariConfig - HikariPool-4 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+17:07:07.497 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
+17:07:07.497 [restartedMain] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+17:07:07.504 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
+17:07:07.505 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+17:07:07.615 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+17:07:07.956 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+17:07:08.166 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-12345"]
+17:07:08.179 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 12345 (http) with context path ''
+17:07:08.192 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+17:07:08.193 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+17:07:08.198 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+17:07:08.256 [restartedMain] INFO  com.quizz.pro.MyBootApplication - Started MyBootApplication in 1.827 seconds (JVM running for 85.18)
+17:07:08.260 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+17:07:08.262 [restartedMain] INFO  com.quizz.pro.MyBootApplication - ---info----MyBootApplication -----End---------
+17:07:08.262 [restartedMain] ERROR com.quizz.pro.MyBootApplication - ---error---MyBootApplication -----End---------
+17:07:12.645 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+17:07:12.688 [Thread-18] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-12345"]
+17:07:12.688 [Thread-18] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+17:07:12.697 [Thread-18] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-12345"]
+17:07:12.701 [Thread-18] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-12345"]
+17:07:12.707 [Thread-18] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown initiated...
+17:07:12.715 [Thread-18] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown completed.
+17:07:12.792 [restartedMain] INFO  com.quizz.pro.MyBootApplication - ---info---MyBootApplication -----begin---------
+17:07:12.793 [restartedMain] ERROR com.quizz.pro.MyBootApplication - ---error----MyBootApplication -----begin---------
+17:07:12.864 [restartedMain] INFO  com.quizz.pro.MyBootApplication - Starting MyBootApplication using Java 17.0.12 on DESKTOP-NK37HDR with PID 14656 (E:\FinalProject\Quizz_Project\QuizzPro_Prasanna\target\classes started by user in E:\FinalProject\Quizz_Project\QuizzPro_Prasanna)
+17:07:12.865 [restartedMain] INFO  com.quizz.pro.MyBootApplication - The following 1 profile is active: "dev"
+17:07:13.475 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+17:07:13.482 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 JPA repository interfaces.
+17:07:13.658 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 12345 (http)
+17:07:13.659 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-12345"]
+17:07:13.660 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+17:07:13.661 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.83]
+17:07:13.835 [restartedMain] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+17:07:13.840 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+17:07:13.840 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 971 ms
+17:07:13.915 [restartedMain] WARN  com.zaxxer.hikari.HikariConfig - HikariPool-5 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+17:07:13.915 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Starting...
+17:07:13.915 [restartedMain] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+17:07:13.921 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Start completed.
+17:07:13.921 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+17:07:14.000 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+17:07:14.236 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+17:07:14.349 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-12345"]
+17:07:14.362 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 12345 (http) with context path ''
+17:07:14.390 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+17:07:14.391 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+17:07:14.395 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+17:07:14.557 [restartedMain] INFO  com.quizz.pro.MyBootApplication - Started MyBootApplication in 1.754 seconds (JVM running for 91.481)
+17:07:14.559 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+17:07:14.560 [restartedMain] INFO  com.quizz.pro.MyBootApplication - ---info----MyBootApplication -----End---------
+17:07:14.560 [restartedMain] ERROR com.quizz.pro.MyBootApplication - ---error---MyBootApplication -----End---------
+17:07:21.799 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+17:07:21.823 [Thread-23] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-12345"]
+17:07:21.823 [Thread-23] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+17:07:21.830 [Thread-23] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-12345"]
+17:07:21.833 [Thread-23] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-12345"]
+17:07:21.837 [Thread-23] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown initiated...
+17:07:21.842 [Thread-23] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown completed.
+17:07:21.929 [restartedMain] INFO  com.quizz.pro.MyBootApplication - ---info---MyBootApplication -----begin---------
+17:07:21.931 [restartedMain] ERROR com.quizz.pro.MyBootApplication - ---error----MyBootApplication -----begin---------
+17:07:22.001 [restartedMain] INFO  com.quizz.pro.MyBootApplication - Starting MyBootApplication using Java 17.0.12 on DESKTOP-NK37HDR with PID 14656 (E:\FinalProject\Quizz_Project\QuizzPro_Prasanna\target\classes started by user in E:\FinalProject\Quizz_Project\QuizzPro_Prasanna)
+17:07:22.002 [restartedMain] INFO  com.quizz.pro.MyBootApplication - The following 1 profile is active: "dev"
+17:07:22.454 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+17:07:22.462 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 JPA repository interfaces.
+17:07:22.632 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 12345 (http)
+17:07:22.633 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-12345"]
+17:07:22.633 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+17:07:22.633 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.83]
+17:07:22.791 [restartedMain] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+17:07:22.797 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+17:07:22.797 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 792 ms
+17:07:22.864 [restartedMain] WARN  com.zaxxer.hikari.HikariConfig - HikariPool-6 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+17:07:22.864 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Starting...
+17:07:22.864 [restartedMain] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+17:07:22.869 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Start completed.
+17:07:22.869 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+17:07:22.971 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+17:07:23.208 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+17:07:23.334 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-12345"]
+17:07:23.430 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 12345 (http) with context path ''
+17:07:23.516 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+17:07:23.518 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+17:07:23.520 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+17:07:23.561 [restartedMain] INFO  com.quizz.pro.MyBootApplication - Started MyBootApplication in 1.617 seconds (JVM running for 100.485)
+17:07:23.567 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+17:07:23.568 [restartedMain] INFO  com.quizz.pro.MyBootApplication - ---info----MyBootApplication -----End---------
+17:07:23.568 [restartedMain] ERROR com.quizz.pro.MyBootApplication - ---error---MyBootApplication -----End---------
+17:07:32.880 [http-nio-12345-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+17:07:32.880 [http-nio-12345-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+17:07:32.882 [http-nio-12345-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+17:07:32.884 [http-nio-12345-exec-1] INFO  c.q.pro.controller.UserController - ----info---------UserController --index page------------------ 
+17:07:32.885 [http-nio-12345-exec-1] ERROR c.q.pro.controller.UserController - -----error-------UserController---index page----------------
+17:07:52.423 [RMI TCP Connection(4)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+17:07:52.446 [RMI TCP Connection(4)-127.0.0.1] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-12345"]
+17:07:52.447 [RMI TCP Connection(4)-127.0.0.1] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+17:07:52.448 [RMI TCP Connection(4)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+17:07:52.454 [RMI TCP Connection(4)-127.0.0.1] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-12345"]
+17:07:52.458 [RMI TCP Connection(4)-127.0.0.1] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-12345"]
+17:07:52.465 [RMI TCP Connection(4)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown initiated...
+17:07:52.471 [RMI TCP Connection(4)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown completed.
