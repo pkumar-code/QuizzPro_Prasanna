@@ -3,7 +3,6 @@ target/
 .mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
-logs/logback.log
 
 ### STS ###
 .apt_generated
@@ -20,6 +19,9 @@ logs/logback.log
 *.iws
 *.iml
 *.ipr
+
+#### Logs #######
+**/*.log
 
 ### NetBeans ###
 /nbproject/private/
