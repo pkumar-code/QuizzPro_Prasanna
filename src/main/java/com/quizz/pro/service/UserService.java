@@ -1,8 +1,8 @@
-package com.quizz.pro.Service;
+package com.quizz.pro.service;
 
 import java.util.List;
 
-import com.quizz.pro.Entity.User;
+import com.quizz.pro.entity.User;
 
 public interface UserService {
 

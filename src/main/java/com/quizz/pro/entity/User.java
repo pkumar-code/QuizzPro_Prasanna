@@ -1,4 +1,4 @@
-package com.quizz.pro.Entity;
+package com.quizz.pro.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

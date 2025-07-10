@@ -1,38 +1,61 @@
+################################
+#Spring mail
+################################
 spring:
   mail:
-    host: smtp.gmail.com
-    username: pkumar.c028@gmail.com
-    port: '587'
     properties:
       mail:
         smtp:
           starttls:
             enable: 'true'
           auth: 'true'
+    host: smtp.gmail.com
+    username: pkumar.c028@gmail.com
     password: pvqf ggit xvyn gepu
+    port: '587'
+################################
+#Spring mail
+################################
   application:
     name: QuizzPro_Prasanna
+################################
+#Spring DataSource
+################################	
   datasource:
     hikari:
-      idle-timeout: '2000000'
-      maximum-pool-size: '10'
+      idle-timeout: 2000000
+      maximum-pool-size: 10
+################################
+#Spring MVC
+################################  
   mvc:
     view:
       prefix: /WEB-INF/myjsps/
       suffix: .jsp
+################################
+#Swagger
+################################	
     pathmatch:
       matching-strategy: ANT_PATH_MATCHER
-  banner:
-    location: classpath:banner.txt
+#################################
+#Profiles
+################################
   profiles:
     active:
     - "dev"
+################################
+#Logger
+################################
 logging:
   pattern:
     console: '%-5level %logger{36} -%m%n'
   level:
-    root: 'info          '
+    root: 'info'   
+################################
+#Server Port
+################################
 server:
-  port: '12345'
+  port: 12345
+################################
 
 

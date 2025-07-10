@@ -1,5 +1,4 @@
-package com.quizz.pro.Util;
-
+package com.quizz.pro;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -13,6 +12,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 public class MyBootApplication  {
 
 	static Logger log=LoggerFactory.getLogger(MyBootApplication.class);
+	
 	
 public static void main(String[] args) {
 	

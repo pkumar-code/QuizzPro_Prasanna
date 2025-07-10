@@ -1,4 +1,4 @@
-package com.quizz.pro.Controller;
+package com.quizz.pro.controller;
 
 import java.util.List;
 
@@ -12,8 +12,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.quizz.pro.Entity.User;
-import com.quizz.pro.Service.UserService;
+import com.quizz.pro.entity.User;
+import com.quizz.pro.service.UserService;
 
 import io.swagger.annotations.ApiOperation;
 
@@ -71,7 +71,7 @@ public class UserController {
 		log.debug("-----debug-----UserController --verifyOtP-----------------");
 		log.error("-----error-------UserController---verifyOtP----------------");
 		if (b == true) {
-			page = "QuizzHome";
+			page = "teacherHome";
 		} else {
 			page = "verifyOtp";
 		}

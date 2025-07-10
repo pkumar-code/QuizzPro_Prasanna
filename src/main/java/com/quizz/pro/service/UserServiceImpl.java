@@ -1,4 +1,4 @@
-package com.quizz.pro.Service;
+package com.quizz.pro.service;
 
 import java.util.List;
 
@@ -7,8 +7,8 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.quizz.pro.DAO.UserDAO;
-import com.quizz.pro.Entity.User;
+import com.quizz.pro.dao.UserDAO;
+import com.quizz.pro.entity.User;
 import com.quizz.pro.template.EmailTemplate;
 
 @Service
@@ -33,7 +33,7 @@ public class UserServiceImpl implements UserService {
 		List<User> user = userDAO.verifyUser(email, password);
 
 		String from = "pkumar.c028@gmail.com";
-		String to = "1slszqxm83@xkxkud.com";
+		String to = "habhgpsle3@zudpck.com";
 		String subject = "Quizz Pro  OTP";
 		String body = "<font color=black size=5>  OTP For  Login - QuizzPro :  </font>" + "<h1>" + otp + "</h1>";
 		Etemp.sendMail(from, to, subject, body);
