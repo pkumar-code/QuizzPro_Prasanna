@@ -1,9 +1,0 @@
-com\quizz\pro\controller\UserController.class
-com\quizz\pro\MyBootApplication.class
-com\quizz\pro\entity\User.class
-com\quizz\pro\service\UserServiceImpl.class
-com\quizz\pro\dao\UserDAO.class
-com\quizz\pro\dao\UserDAOImpl.class
-com\quizz\pro\service\UserService.class
-com\quizz\pro\util\WebConfig.class
-com\quizz\pro\template\EmailTemplate.class
