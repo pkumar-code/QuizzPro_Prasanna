@@ -3,7 +3,7 @@
 <!DOCTYPE  html>
 <html>
 <head>
-<link rel="stylesheet" href="teacher.css" />
+<link rel="stylesheet" href="/mycss/teacher.css" />
 <link href=" webjars/bootstrap/5.3.3/css/bootstrap.min.css"
 	rel="stylesheet" />
 <link rel="stylesheet"
