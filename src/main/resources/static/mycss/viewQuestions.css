@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+.hed {
+	font-size: 30px;
+	color: red;
+	padding-left: 80px;
+}
+
+a {
+	text-decoration: none;
+}
+
+h5 {
+	text-align: center;
+}
+
+.headname {
+	margin-left: 450px;
+}
+
+.inline {
+	display: flex;
+}
+h3{
+	width:100%;
+	background-color:goldenrod;
+   padding-right:35px;
+}

@@ -1,18 +1,22 @@
 package com.quizz.pro;
 
+
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import com.quizz.pro.dao.UserDAO;
 
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @SpringBootApplication
 @EnableSwagger2 
-public class MyBootApplication  {
+public class MyBootApplication {
 
 	static Logger log=LoggerFactory.getLogger(MyBootApplication.class);
-	
 	
 public static void main(String[] args) {
 	
@@ -27,5 +31,7 @@ public static void main(String[] args) {
 	log.error("---error---MyBootApplication -----End---------");
 
 	}
+
+
 
 }
