@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+body {
+	padding-left: 400px;
+	padding-top: 20px;
+}
+
+td {
+	padding: 10px;
+	font-size: large;
+}
+
+input {
+	border-radius: 10px;
+	width: 100%;
+}
+
+textarea:nth-child(1) {
+	width: 100%;
+	height: 70px;
+	padding: 12px 20px;
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+	background-color: #f8f8f8;
+	font-size: 16px;
+	resize: none;
+}

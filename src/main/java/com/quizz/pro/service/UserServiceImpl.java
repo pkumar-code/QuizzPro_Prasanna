@@ -8,6 +8,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.quizz.pro.dao.UserDAO;
+import com.quizz.pro.entity.CourseTopics;
+import com.quizz.pro.entity.Courses;
+import com.quizz.pro.entity.QuestionOptions;
+import com.quizz.pro.entity.Questions;
 import com.quizz.pro.entity.User;
 import com.quizz.pro.template.EmailTemplate;
 
@@ -18,6 +22,7 @@ public class UserServiceImpl implements UserService {
 
 	@Autowired
 	UserDAO userDAO;
+
 
 	@Autowired
 	EmailTemplate Etemp;
@@ -33,7 +38,7 @@ public class UserServiceImpl implements UserService {
 		List<User> user = userDAO.verifyUser(email, password);
 
 		String from = "pkumar.c028@gmail.com";
-		String to = "habhgpsle3@zudpck.com";
+		String to = "05m1bdu3hw@mrotzis.com";
 		String subject = "Quizz Pro  OTP";
 		String body = "<font color=black size=5>  OTP For  Login - QuizzPro :  </font>" + "<h1>" + otp + "</h1>";
 		Etemp.sendMail(from, to, subject, body);
@@ -77,5 +82,84 @@ public class UserServiceImpl implements UserService {
 		System.out.println("------generateOtp--------" + otp);
 		return otp;
 	}
+
+	@Override
+	public List<Courses> getCourses() {
+	
+		return userDAO.getCourse();
+	}
+
+	@Override
+	public List<CourseTopics> getTopics() {
+		
+		return userDAO.getTopics();
+	}
+
+	@Override
+	public void addQuestion(Questions questions) {
+	
+		userDAO.addQuestion(questions);
+	}
+
+	@Override
+	public List<Questions> getAllQuestions() {
+		
+		return userDAO.getAllQuestions();
+	}
+
+	@Override
+	public int countQuestions() {
+		
+		return userDAO.countQuestions();
+	}
+
+	@Override
+	public List<Questions> viewAllQuestions(int start, int total) {
+		
+		return userDAO.viewAllQuestions(start, total);
+	}
+
+	@Override
+	public Questions viewQuestionById(int questionId) {
+		
+		return userDAO.viewQuestionById(questionId);
+	}
+
+	@Override
+	public int updateQuestion(Questions questions) {
+	return userDAO.updateQuestion(questions);
+		
+	}
+
+	@Override
+	public void deleteQuestion(int questionId) {
+		userDAO.deleteQuestion(questionId);
+	}
+
+	@Override
+	public List<QuestionOptions> getQuestionOptionsByQuestionId(int questionId) {
+		
+		return userDAO.getQuestionOptionsByQuestionId(questionId);
+	}
+
+	@Override
+	public List<Questions> getAllQuestions(int couId, int topicId) {
+		
+		return userDAO.getAllQuestions(couId, topicId);
+	}
+
+	@Override
+	public void updateOptionsByQuestionId(int question_Id, List<QuestionOptions> questionOptions) {
+		
+		
+		
+		
+		
+		
+		
+	}
+
+	
+
 
 }

@@ -3,6 +3,7 @@ package com.quizz.pro.controller;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -11,6 +12,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.SessionAttributes;
 
 import com.quizz.pro.entity.User;
 import com.quizz.pro.service.UserService;
@@ -18,6 +20,7 @@ import com.quizz.pro.service.UserService;
 import io.swagger.annotations.ApiOperation;
 
 @Controller
+@SessionAttributes("USER")
 public class UserController {
 
 	private static final Logger log = LoggerFactory.getLogger(UserController.class);
@@ -52,12 +55,15 @@ public class UserController {
 		if (!users.isEmpty()) {
 			user = users.get(0);
 			page = "verifyOtp";
+			
 			model.addAttribute("EMAIL", em);
 			model.addAttribute("PS", ps);
 			model.addAttribute("RESEND", "TRUE");
 		} else {
 			page = "login";
-		}
+		}	
+		HttpSession session=req.getSession();
+		session.setAttribute("USER",user);
 		return page;
 	}
 
@@ -129,5 +135,21 @@ public class UserController {
 
 		return "login";
 	}
+	
+	@GetMapping("/logout")
+	public String getLogout(Model model, HttpServletRequest req) {
+		log.info("----info---------UserController ---getLogout------------------ ");
+		log.debug("-----debug-----UserController ---getLogout----------------");
+		log.error("-----error-------UserController----getLogout----------------");
+		String page = "login";
+		HttpSession session = req.getSession();
+		if (session != null) {
+			session.invalidate();
+		}
+
+		return page;
+
+	}
+	
 
 }

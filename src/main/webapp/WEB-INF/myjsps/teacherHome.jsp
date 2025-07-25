@@ -11,12 +11,21 @@
 <title>QuizzPro</title>
 </head>
 <body>
-	<div class="wrapper">
-		<ul class="nav justify-content-end title">
-			<li class="nav-item"><a class="nav-link "
-				aria-current="page" href="#">logout</a></li>
-		</ul>
-		
-	</div>
+	<div class=" home">
+		<nav class="navbar navbar-light rounded "
+			style="background-color: #e3f2fd;">
+			<div class="container-fluid">
+				<span> <img src="#" alt="logo">
+				</span> <span class="navbar-text"> <b>Teachers DashBorad</b>
+				</span> <span> Welcome to : ${USER.full_Name} || <a href="/logout">logout</a>
+				</span>
+			</div>
+		</nav>
+			<div >
+				<a href="addquestionpage">Add Question</a> <a
+					href="viewquestionspage">ViewQuestion</a> <a
+					href="uploadQuestions.jsp">Upload Questions</a>
+			</div>
+		</div>
 </body>
 </html>
