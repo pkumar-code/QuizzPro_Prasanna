@@ -157,9 +157,9 @@ public class UserDAOImpl implements UserDAO {
 	}
 
 	@Override
-	public int updateQuestion(Questions questions) {
-		htemp.saveOrUpdate(questions);		
-		return 1;
+	public void updateQuestion(Questions questions) {
+		htemp.update(questions);	
+		return ;
 	}
 
 	@Override
@@ -195,23 +195,6 @@ public class UserDAOImpl implements UserDAO {
 				.setParameter(2, couId)	
 				.getResultList();
 		return list;
-	}
-
-	@Override
-	public void updateOptionsByQuestionId(int question_Id, List<QuestionOptions> updatedquestionOptions) {
-		
-		
-        List<QuestionOptions> existOptions=getQuestionOptionsByQuestionId(question_Id);
-		
-		htemp.deleteAll(existOptions);
-	
-		Questions question=viewQuestionById(question_Id);
-				
-		for(QuestionOptions qopt: updatedquestionOptions) {
-			qopt.setQuestions(question);
-		}
-		htemp.saveOrUpdate(updatedquestionOptions);
-		
 	}
 
 

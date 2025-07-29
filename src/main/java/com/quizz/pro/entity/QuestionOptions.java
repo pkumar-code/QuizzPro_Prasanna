@@ -2,10 +2,10 @@ package com.quizz.pro.entity;
 
 
 
-import javax.persistence.CascadeType;
+import java.util.List;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -37,8 +37,11 @@ public class QuestionOptions{
 	@ApiModelProperty("holds option_data ")
 	private String option_data;
 	
-	@ManyToOne(fetch=FetchType.EAGER,cascade=CascadeType.ALL)
+	@ManyToOne
 	@JoinColumn(name="question_Id",referencedColumnName="question_Id")
 	private Questions questions;	
+	
+	
+	
 	
 }

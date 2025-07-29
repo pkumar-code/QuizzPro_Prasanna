@@ -35,11 +35,10 @@ public interface UserDAO {
 	public int countQuestions();
 
 	public Questions viewQuestionById(int questionId);
-	public int updateQuestion(Questions questions);
+	public void updateQuestion(Questions questions);
 	public void deleteQuestion(int questionId);
 	
 	public List<QuestionOptions> getQuestionOptionsByQuestionId(int question_Id);
 		
-	public void updateOptionsByQuestionId(int question_Id,List<QuestionOptions> UpdatedquestionOptions);
 		
 }

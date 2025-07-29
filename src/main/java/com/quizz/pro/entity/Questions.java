@@ -28,15 +28,15 @@ public class Questions{
 	@ApiModelProperty("holds correct_Answer ")
 	private String correct_Answer;
 	
-	@ManyToOne(fetch=FetchType.EAGER,cascade=CascadeType.ALL)
+	@ManyToOne
 	@JoinColumn(name="topic_Id",referencedColumnName="topic_Id")
 	private CourseTopics courseTopics;
 	
-	@ManyToOne(fetch=FetchType.LAZY,cascade=CascadeType.ALL)
+	@ManyToOne
 	@JoinColumn(name="course_Id",referencedColumnName="course_Id")
 	private Courses courses;
 	
-	@OneToMany(mappedBy="questions",fetch=FetchType.LAZY,cascade=CascadeType.ALL,orphanRemoval = true)
+	@OneToMany(mappedBy="questions",cascade = CascadeType.ALL, orphanRemoval = true)
 	private List<QuestionOptions> questionOptions;
 
 	public Questions(int question_Id, String question, String correct_Answer) {

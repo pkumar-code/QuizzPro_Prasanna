@@ -137,7 +137,9 @@ public class TeacherController {
 
 		Map<Integer, String> mycourses = getAllCourses();
 		Map<Integer, String> mytopics = getAllCourseTopics();
-
+		
+//		System.out.println(mycourses);
+//		System.out.println(mytopics);
 		HttpSession session = req.getSession();
 		session.setAttribute("COURSES", mycourses);
 		session.setAttribute("TOPICS", mytopics);
@@ -228,8 +230,10 @@ public class TeacherController {
 		}
 
 		String couName = ques.getCourses().getCourse_Name();
+		System.out.println("----------"+couName);
 		String topicName = ques.getCourseTopics().getTopic_Name();
-
+		System.out.println("-----------"+topicName);
+		
 		model.addAttribute("LIST", mylist);
 		model.addAttribute("Question", ques);
 		model.addAttribute("COUNAME", couName);
@@ -240,6 +244,7 @@ public class TeacherController {
 
 	@GetMapping("/editquestion")
 	public String EditQuestionPage(@RequestParam("questionId") String questionId, Model model) {
+		
 		Questions ques = userService.viewQuestionById(Integer.parseInt(questionId));
 
 		List<QuestionOptions> list = userService.getQuestionOptionsByQuestionId(Integer.parseInt(questionId));
@@ -280,27 +285,41 @@ public class TeacherController {
 
 		String page = "";
 		
-		Questions ques=new Questions(Integer.parseInt(questionId),question,correct);
+		Questions ques = userService.viewQuestionById(Integer.parseInt(questionId));
 		
+		ques.setQuestion(question);
+		ques.setCorrect_Answer(correct);
+	    ques.setQuestion_Id(Integer.parseInt(questionId));
+		
+		ques.getQuestionOptions().clear();
+			
 		List<QuestionOptions> opts = new ArrayList<>();
 
 		QuestionOptions qoptA = new QuestionOptions();
 		qoptA.setOption_data(optA);
+		qoptA.setQuestions(ques);
 		opts.add(qoptA);
 
 		QuestionOptions qoptB = new QuestionOptions();
 		qoptB.setOption_data(optB);
+		qoptB.setQuestions(ques);
 		opts.add(qoptB);
 
 		QuestionOptions qoptC = new QuestionOptions();
 		qoptC.setOption_data(optC);
+		qoptC.setQuestions(ques);
 		opts.add(qoptC);
 
 		QuestionOptions qoptD = new QuestionOptions();
 		qoptD.setOption_data(optD);
+		qoptD.setQuestions(ques);
 		opts.add(qoptD);
 		
-		userService.updateOptionsByQuestionId(Integer.parseInt(questionId), opts);
+		ques.getQuestionOptions().add(qoptA);		
+		ques.getQuestionOptions().add(qoptB);	
+		ques.getQuestionOptions().add(qoptC);	
+		ques.getQuestionOptions().add(qoptD);	
+		
 		userService.updateQuestion(ques);
 		
 		return "teacherHome";
