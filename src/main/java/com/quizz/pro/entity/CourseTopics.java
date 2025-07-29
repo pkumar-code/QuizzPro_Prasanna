@@ -47,7 +47,7 @@ public class CourseTopics {
 	private long no_Of_Questions;
 	
 	
-	@ManyToOne(fetch=FetchType.EAGER,cascade=CascadeType.ALL)
+	@ManyToOne
 	@JoinColumn(name="course_Id",referencedColumnName="course_Id")
 	private Courses courses;
 	

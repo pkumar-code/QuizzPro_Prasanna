@@ -122,12 +122,13 @@ public class UserServiceImpl implements UserService {
 	@Override
 	public Questions viewQuestionById(int questionId) {
 		
-		return userDAO.viewQuestionById(questionId);
+		Questions ques=userDAO.viewQuestionById(questionId);
+		return ques;
 	}
 
 	@Override
-	public int updateQuestion(Questions questions) {
-	return userDAO.updateQuestion(questions);
+	public void updateQuestion(Questions questions) {
+	 userDAO.updateQuestion(questions);
 		
 	}
 
@@ -147,19 +148,6 @@ public class UserServiceImpl implements UserService {
 		
 		return userDAO.getAllQuestions(couId, topicId);
 	}
-
-	@Override
-	public void updateOptionsByQuestionId(int question_Id, List<QuestionOptions> questionOptions) {
-		
-		
-		
-		
-		
-		
-		
-	}
-
-	
 
 
 }

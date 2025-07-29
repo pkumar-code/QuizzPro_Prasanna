@@ -31,7 +31,6 @@
 				<tr>
 					<td>TopicName</td>
 					<td>
-
 					<input type="text" name="topic" value="${TOPICNAME }" disabled
 						class="formpcontrol form-control-lg" /></td>
 				</tr>

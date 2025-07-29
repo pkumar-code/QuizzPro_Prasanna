@@ -35,13 +35,12 @@ public interface UserService {
 
 	public Questions viewQuestionById(int questionId);
 
-	public int updateQuestion(Questions questions);
+	public void updateQuestion(Questions questions);
 
 	public void deleteQuestion(int questionId);
 
 	public List<QuestionOptions> getQuestionOptionsByQuestionId(int questionId);
 
-	public void updateOptionsByQuestionId(int question_Id,List<QuestionOptions> questionOptions);
 	
 	
 }
