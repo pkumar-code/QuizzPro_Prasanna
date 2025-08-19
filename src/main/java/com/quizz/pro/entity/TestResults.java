@@ -1,7 +1,5 @@
 package com.quizz.pro.entity;
 
-
-
 import java.util.List;
 
 import javax.persistence.Column;
@@ -13,8 +11,6 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -23,27 +19,33 @@ import lombok.ToString;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@ToString
 @Entity
-@Table(name=" myquestion_options")
-@ApiModel("QuestionOptions  contains question_Id ,option_id,option_data") 
-public class QuestionOptions{
+@Table(name="myresults")
+public class TestResults {
 	
 	@Id
+	@Column(name="test_Id")
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	@Column(name="option_id")
-	@ApiModelProperty("holds option_id ")
-	private int option_id;
+	private int testId;
 	
-	@Column(name="option_data")
-	@ApiModelProperty("holds option_data ")
-	private String option_data;
+	@Column(name="qid")
+	private int qid;
 	
-	@ToString.Exclude
-	@ManyToOne
-	@JoinColumn(name="question_Id",referencedColumnName="question_Id")
-	private Questions questions;	
+	@Column(name="question")
+	private String question;
+	
+	@Column(name="correctAnswer")
+	private String correctAnswer;
+
+	@Column(name="yourAnswer")
+	private String yourAnswer;
+	
+	@Column(name="status")
+	private String status;
 	
 	
 	
 	
+
 }

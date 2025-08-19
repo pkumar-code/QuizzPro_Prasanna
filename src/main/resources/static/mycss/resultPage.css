@@ -1,0 +1,63 @@
+body {
+	align-items: center;
+	justify-content: center;
+	padding: 70px;
+	
+}
+
+.home {
+	border: 2px solid red;
+	border-collapse: collapse;
+	padding-bottom: 10px;
+	border-radius: 8px;
+}
+
+table {
+	width: 95%;
+	margin: 10px auto;
+	border-collapse: collapse;
+}
+
+th, td {
+	border: 1px solid #444;
+	font-size:20px;
+	padding: 8px;
+	text-align: center;
+}
+
+th {
+	background: #e2e2e2;
+}
+
+.Correct {
+	color: green;
+	font-weight: bold;
+}
+
+.Wrong {
+	color: red;
+	font-weight: bold;
+}
+
+.score {
+	text-align: center;
+	margin: 20px;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.btn {
+	display: block;
+	width: 200px;
+	margin: 0 auto;
+	padding: 10px;
+	background: #007BFF;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	border-radius: 5px;
+}
+
+.btn:hover {
+	background: #0056b3;
+}
