@@ -28,17 +28,21 @@ public class Questions{
 	@ApiModelProperty("holds correct_Answer ")
 	private String correct_Answer;
 	
+	@ToString.Exclude
 	@ManyToOne
 	@JoinColumn(name="topic_Id",referencedColumnName="topic_Id")
 	private CourseTopics courseTopics;
 	
+	@ToString.Exclude
 	@ManyToOne
 	@JoinColumn(name="course_Id",referencedColumnName="course_Id")
 	private Courses courses;
 	
+	@ToString.Exclude
 	@OneToMany(mappedBy="questions",cascade = CascadeType.ALL, orphanRemoval = true)
 	private List<QuestionOptions> questionOptions;
-
+	
+	
 	public Questions(int question_Id, String question, String correct_Answer) {
 		super();
 		this.question_Id = question_Id;

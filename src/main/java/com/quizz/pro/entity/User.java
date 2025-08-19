@@ -38,6 +38,10 @@ public class  User {
 	@ApiModelProperty("holds password")
 	private String password;
 	
+	@Column(name="user_Role")
+	@ApiModelProperty("holds user_Role")
+	private String user_Role;
+	
 	@Column(name="otp")
 	@ApiModelProperty("holds otp")
 	private int otp;
@@ -47,7 +51,7 @@ public class  User {
 	private String status;
 	
 	public User() {}
-	
+
 	
 	
 	

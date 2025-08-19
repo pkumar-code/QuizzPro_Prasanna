@@ -79,11 +79,11 @@
 		</table>
 		<h3 align="center">
 			<c:if test="${ShowPrevious eq 'TRUE' }">
-				<a href="previousLeads">Previous</a>
+				<a href="previousQuestions">Previous</a>
 			</c:if>
 			&nbsp;&nbsp;
 			<c:if test="${ShowNext eq 'TRUE' }">
-				<a href="nextLeads">Next</a>
+				<a href="nextQuestions">Next</a>
 			</c:if>
 		</h3>
 	</div>

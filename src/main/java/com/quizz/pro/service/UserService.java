@@ -2,10 +2,13 @@ package com.quizz.pro.service;
 
 import java.util.List;
 
+import org.springframework.data.domain.Pageable;
+
 import com.quizz.pro.entity.CourseTopics;
 import com.quizz.pro.entity.Courses;
 import com.quizz.pro.entity.QuestionOptions;
 import com.quizz.pro.entity.Questions;
+import com.quizz.pro.entity.TestResults;
 import com.quizz.pro.entity.User;
 
 public interface UserService {
@@ -14,7 +17,7 @@ public interface UserService {
 
 	public boolean verifyEmail(String email);
 
-	public boolean verifyOTP(int otp);
+	public User verifyOTP(int otp);
 
 	public void forgotPWD(String email, String npassword);
 
@@ -28,7 +31,7 @@ public interface UserService {
 
 	public int countQuestions();
 
-	public List<Questions> getAllQuestions();
+	public List<Questions> getAllQuestions1(int start, int total);
 
 	public List<Questions> viewAllQuestions(int start, int total);
 	public List<Questions> getAllQuestions(int couId, int topicId);
@@ -39,8 +42,15 @@ public interface UserService {
 
 	public void deleteQuestion(int questionId);
 
-	public List<QuestionOptions> getQuestionOptionsByQuestionId(int questionId);
+	public List<QuestionOptions>  getQuestionOptionsByQuestionId(int questionId);
 
+	List<CourseTopics> getTopicsByCourseId(int courseId);
+	List<Questions> getAllQuestionsByTopicId(int topicId);		
 	
+	//////////////////////////////////////////////////////
+	
+	public void addTestResults(TestResults result);
+	
+	public List<TestResults> getAllTestResults();
 	
 }

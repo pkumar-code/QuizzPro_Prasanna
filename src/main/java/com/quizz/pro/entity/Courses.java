@@ -33,10 +33,10 @@ public class Courses {
 	@ApiModelProperty("holds course_Name")
 	private String course_Name;
 	
-	@OneToMany(mappedBy="courses",fetch=FetchType.LAZY)
+	@OneToMany(mappedBy="courses")
 	private List<CourseTopics> courseTopics;
 	
-	@OneToMany(mappedBy="courses",fetch=FetchType.LAZY)
+	@OneToMany(mappedBy="courses")
 	private List<Questions> questions;
 		
 		

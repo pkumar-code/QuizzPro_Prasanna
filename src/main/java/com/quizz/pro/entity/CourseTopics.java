@@ -52,7 +52,7 @@ public class CourseTopics {
 	private Courses courses;
 	
 	
-	@OneToMany(mappedBy="courseTopics",fetch=FetchType.LAZY,cascade=CascadeType.ALL)
+	@OneToMany(mappedBy="courseTopics",cascade=CascadeType.ALL)
 	private List<Questions> questions;
 		
 

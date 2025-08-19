@@ -15,7 +15,7 @@
 		<nav class="navbar navbar-light rounded "
 			style="background-color: #e3f2fd;">
 			<div class="container-fluid">
-				<span> <img src="#" alt="logo">
+				<span> <img src="" alt="logo">
 				</span> <span class="navbar-text"> <b>Teachers DashBorad</b>
 				</span> <span> Welcome to : ${USER.full_Name} || <a href="/logout">logout</a>
 				</span>
@@ -27,5 +27,6 @@
 					href="uploadQuestions.jsp">Upload Questions</a>
 			</div>
 		</div>
+		<c:import url="myfooter.jsp"></c:import>
 </body>
 </html>

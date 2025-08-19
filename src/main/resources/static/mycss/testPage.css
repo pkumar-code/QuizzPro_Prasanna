@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+@import
+	url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap")
+	;
+
+
+body {
+	align-items: center;
+	justify-content: center;
+	padding: 70px;
+	
+}
+
+.home {
+	border: 2px solid red;
+	border-collapse: collapse;
+	padding-bottom: 10px;
+	border-radius: 8px;
+}
+
+.quiz-container {
+	padding: 20px;
+	background-color: white;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 2px solid #ccc;
+	padding:15px;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+}
+
+.header h2 {
+	margin: 0;
+}
+
+.question-number {
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.question {
+	font-size:30px;
+	padding-left:30px;
+	margin-bottom: 20px;
+}
+
+.options label {
+	font-size:25px;
+	display: block;
+	margin: 10px 0;
+	padding-left: 50px;
+}
+
+.submit-btn {
+	text-align: right;
+	padding-right:10px;
+	padding-bottom:5px;
+	margin-top: 20px;
+}
+
+button {
+	padding: 10px 20px;
+	font-size: 16px;
+	background-color:green;
+	cursor: pointer;
+}
+#timer {
+      font-size: 20px;
+      font-weight: bold;
+      color: red;
+    }
+

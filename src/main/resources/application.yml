@@ -43,6 +43,10 @@ spring:
   profiles:
     active:
     - "dev"
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
 ################################
 #Logger
 ################################
@@ -57,5 +61,3 @@ logging:
 server:
   port: 12345
 ################################
-
-

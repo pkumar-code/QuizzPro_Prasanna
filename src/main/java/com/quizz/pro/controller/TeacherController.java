@@ -25,7 +25,7 @@ import com.quizz.pro.entity.Questions;
 import com.quizz.pro.service.UserService;
 
 @Controller
-@SessionAttributes("TotalQuestions")
+@SessionAttributes("{TotalQuestions,USER}")
 public class TeacherController {
 
 	private static final Logger log = LoggerFactory.getLogger(TeacherController.class);
@@ -33,6 +33,8 @@ public class TeacherController {
 	@Autowired
 	UserService userService;
 
+	int pageCount = 0;
+	
 	int start = 0;
 	int end = 5;
 	int totalDisplay = 5;
@@ -51,11 +53,10 @@ public class TeacherController {
 
 		model.addAttribute("ShowPrevious", "FALSE");
 		model.addAttribute("ShowNext", "TRUE");
-
 	}
 
-	@GetMapping("/nextLeads")
-	public String showNextQuestions(Model model) {
+	@GetMapping("/nextQuestions")
+	public String showNextQuestions(Model model,HttpSession session) {
 
 		start = start + totalDisplay;
 		if (start <= 0) {
@@ -75,13 +76,19 @@ public class TeacherController {
 			model.addAttribute("TO", end);
 			model.addAttribute("ShowNext", "TRUE");
 		}
-		List<Questions> myquestions = userService.viewAllQuestions(start, totalDisplay);
+		int pageCount=(int) session.getAttribute("PAGECOUNT");
+		System.out.println("NEXT - "+pageCount);
+		pageCount++;
+		System.out.println("NEXT - "+pageCount);
+		List<Questions> myquestions = userService.getAllQuestions1(pageCount, totalDisplay);
+		System.out.println("NEXT - "+myquestions);
 		model.addAttribute("ALLQUESTIONS", myquestions);
+		model.addAttribute("PAGECOUNT",  pageCount);
 		return "viewQuestions";
 	}
 
-	@GetMapping("/previousLeads")
-	public String showPreviousQuestions(Model model) {
+	@GetMapping("/previousQuestions")
+	public String showPreviousQuestions(Model model,HttpSession session) {
 
 		start = start - totalDisplay;
 		if (start <= 0) {
@@ -99,11 +106,22 @@ public class TeacherController {
 			model.addAttribute("TO", end);
 			model.addAttribute("ShowNext", "TRUE");
 		}
-
-		List<Questions> myquestions = userService.viewAllQuestions(start, totalDisplay);
+		int pageCount=(int)session.getAttribute("PAGECOUNT");
+		System.out.println("PREVIOUS - "+pageCount);
+		if( pageCount >0)
+		pageCount--;
+		System.out.println("PREVIOUS - "+pageCount);
+		
+		List<Questions> myquestions = userService.getAllQuestions1(pageCount, totalDisplay);
+		System.out.println("PREVIOUS - "+myquestions);
 		model.addAttribute("ALLQUESTIONS", myquestions);
+		model.addAttribute("PAGECOUNT",  pageCount);
+			
 		return "viewQuestions";
 	}
+	
+	
+	
 
 	private Map<Integer, String> getAllCourses() {
 
@@ -129,8 +147,33 @@ public class TeacherController {
 		}
 
 		return mymap;
-
 	}
+	
+	@GetMapping("/viewquestionspage")
+	public String viewQuestions(Model model, HttpServletRequest req) {
+
+		log.info("----info---------TeacherController --viewQuestions()------------------ ");
+		log.debug("-----debug-----TeacherController --viewQuestions()-----------------");
+		log.error("-----error-------TeacherController---viewQuestions()----------------");
+		//int pageCount = 0;
+
+		List<Questions> allquestions = userService.getAllQuestions1(pageCount, totalDisplay);
+		
+		System.out.println("VIEWPAGE - "+allquestions);
+		Map<Integer, String> mycourses = getAllCourses();
+		Map<Integer, String> mytopics = getAllCourseTopics();
+
+		HttpSession session = req.getSession();
+		session.setAttribute("COURSES", mycourses);
+		session.setAttribute("TOPICS", mytopics);
+
+		model.addAttribute("ALLQUESTIONS", allquestions);
+		session.setAttribute("PAGECOUNT",  pageCount);
+		showFirstPage(model);
+		return "viewQuestions";
+	}
+	
+	
 
 	@GetMapping("/addquestionpage")
 	public String getQuestionPage(Model model, HttpServletRequest req) {
@@ -138,8 +181,6 @@ public class TeacherController {
 		Map<Integer, String> mycourses = getAllCourses();
 		Map<Integer, String> mytopics = getAllCourseTopics();
 		
-//		System.out.println(mycourses);
-//		System.out.println(mytopics);
 		HttpSession session = req.getSession();
 		session.setAttribute("COURSES", mycourses);
 		session.setAttribute("TOPICS", mytopics);
@@ -197,25 +238,7 @@ public class TeacherController {
 		return "teacherHome";
 	}
 
-	@GetMapping("/viewquestionspage")
-	public String viewQuestions(Model model, HttpServletRequest req) {
 
-		log.info("----info---------TeacherController --viewQuestions()------------------ ");
-		log.debug("-----debug-----TeacherController --viewQuestions()-----------------");
-		log.error("-----error-------TeacherController---viewQuestions()----------------");
-
-		List<Questions> allquestions = userService.viewAllQuestions(start, totalDisplay);
-		Map<Integer, String> mycourses = getAllCourses();
-		Map<Integer, String> mytopics = getAllCourseTopics();
-
-		HttpSession session = req.getSession();
-		session.setAttribute("COURSES", mycourses);
-		session.setAttribute("TOPICS", mytopics);
-
-		model.addAttribute("ALLQUESTIONS", allquestions);
-		showFirstPage(model);
-		return "viewQuestions";
-	}
 
 	@GetMapping("/viewQuestion")
 	public String questionInfo(@RequestParam("questionId") int questionId, Model model) {
@@ -230,9 +253,7 @@ public class TeacherController {
 		}
 
 		String couName = ques.getCourses().getCourse_Name();
-		System.out.println("----------"+couName);
 		String topicName = ques.getCourseTopics().getTopic_Name();
-		System.out.println("-----------"+topicName);
 		
 		model.addAttribute("LIST", mylist);
 		model.addAttribute("Question", ques);
@@ -343,9 +364,8 @@ public class TeacherController {
 
 	@GetMapping("/deleteQuestion")
 	public String deleteQuestionById(@RequestParam("questionId") int questionId, Model model) {
-		Questions ques = userService.viewQuestionById(questionId);
-		model.addAttribute("Question", ques);
+		userService.deleteQuestion(questionId);
 		return "viewQuestions";
 	}
-
+	
 }
